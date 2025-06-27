@@ -1,0 +1,94 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+
+interface Post {
+  frontmatter: {
+    title: string;
+    description: string;
+    pubDate: string | Date;
+    tags?: string[];
+  };
+  url: string;
+}
+
+// Load all blog posts
+const postImports = import.meta.glob('../content/blog/*.md');
+const posts: Post[] = [];
+
+for (const path in postImports) {
+  const mod = await postImports[path]() as any;
+  posts.push({
+    frontmatter: mod.frontmatter,
+    url: path.replace('../content/blog', '/blog').replace('.md', ''),
+  });
+}
+
+// Normalize pubDate to Date type
+posts.forEach((post) => {
+  if (typeof post.frontmatter.pubDate === 'string') {
+    post.frontmatter.pubDate = new Date(post.frontmatter.pubDate);
+  }
+});
+
+// Group posts by tags
+const postsByTag: Record<string, Post[]> = {};
+const untagged: Post[] = [];
+
+posts.forEach((post) => {
+  const tags = post.frontmatter.tags ?? [];
+  if (tags.length === 0) {
+    untagged.push(post);
+  } else {
+    for (const tag of tags) {
+      if (!postsByTag[tag]) postsByTag[tag] = [];
+      postsByTag[tag].push(post);
+    }
+  }
+});
+
+// Sort tags alphabetically
+const sortedTags = Object.keys(postsByTag).sort((a, b) => a.localeCompare(b));
+
+// Sort posts within each tag by date (newest first)
+for (const tag in postsByTag) {
+  postsByTag[tag].sort((a, b) =>
+    (b.frontmatter.pubDate as Date).getTime() - (a.frontmatter.pubDate as Date).getTime()
+  );
+}
+
+untagged.sort((a, b) =>
+  (b.frontmatter.pubDate as Date).getTime() - (a.frontmatter.pubDate as Date).getTime()
+);
+---
+
+<BaseLayout>
+  <h1>All Posts by Tag</h1>
+
+  {sortedTags.map((tag) => (
+    <>
+      <h2>{tag}</h2>
+      <ul>
+        {postsByTag[tag].map((post) => (
+          <li>
+            {(post.frontmatter.pubDate as Date).toDateString()} – 
+            <a href={post.url}> {post.frontmatter.title}</a>
+          </li>
+        ))}
+      </ul>
+    </>
+  ))}
+
+  {untagged.length > 0 && (
+    <>
+      <h2>Untagged</h2>
+      <ul>
+        {untagged.map((post) => (
+          <li>
+            {(post.frontmatter.pubDate as Date).toDateString()} – 
+            <a href={post.url}> {post.frontmatter.title}</a>
+          </li>
+        ))}
+      </ul>
+    </>
+  )}
+</BaseLayout>

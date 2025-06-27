@@ -1,0 +1,97 @@
+---
+const { children } = Astro.props;
+---
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>My Blog</title>
+    <style>
+      html, body {
+        margin: 0;
+        padding: 0;
+        height: 100%;
+        font-family: system-ui, sans-serif;
+        background: #f9f9f9;
+        color: #333;
+      }
+
+      .content {
+        padding-bottom: 60px; /* Prevent content being hidden behind the footer */
+      }
+
+      header {
+        background: #222;
+        color: white;
+        padding: 1rem 2rem;
+      }
+
+      header nav a {
+        color: white;
+        text-decoration: none;
+        margin-right: 1.5rem;
+        font-weight: bold;
+      }
+
+      header nav a:hover {
+        text-decoration: underline;
+      }
+
+      main {
+        max-width: 700px;
+        margin: 2rem auto;
+        padding: 0 1rem;
+      }
+
+      footer {
+        position: fixed;
+        bottom: 0;
+        left: 0;
+        width: 100%;
+        height: 60px;
+        background: #222;
+        color: white;
+        text-align: center;
+        line-height: 60px;
+        font-size: 0.9rem;
+        z-index: 10;
+      }
+
+      article {
+        background: white;
+        padding: 1rem 1.5rem;
+        margin-bottom: 1.5rem;
+        border-radius: 6px;
+        box-shadow: 0 1px 4px rgba(0,0,0,0.1);
+      }
+
+      article h2 {
+        margin-top: 0;
+      }
+
+      article p.description {
+        color: #666;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="content">
+      <header>
+        <nav>
+          <a href="/">Home</a>
+          <a href="/posts">Posts</a>
+          <a href="/tutorials">Tutorials</a>
+          <a href="/aboutme">About Me</a>
+        </nav>
+      </header>
+
+      <main>
+        <slot />
+      </main>
+    </div>
+
+    <footer>
+      &copy; {new Date().getFullYear()} My Blog. All rights reserved.
+    </footer>
+  </body>
+</html>

@@ -1,0 +1,75 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+
+interface PostModule {
+  frontmatter: {
+    title: string;
+    pubDate: string;
+    description: string;
+    [key: string]: any;
+  };
+}
+
+//const postImports = import.meta.glob('../../content/blog/*.md', { eager: true });
+const postImports = import.meta.glob('../content/blog/*.md');
+
+console.log("Immports");
+
+console.log(Object.keys(postImports));
+
+
+const posts = [];
+
+for (const path in postImports) {
+  const postModule = (await postImports[path]()) as PostModule;
+
+  posts.push({
+    frontmatter: postModule.frontmatter ?? {},
+    url: path.replace('../content/blog', '/blog').replace('.md', ''),
+  });
+}
+
+// console.log('All posts:', posts);
+
+posts.sort((a, b) => {
+  const dateA = new Date(a.frontmatter.pubDate).getTime();
+  const dateB = new Date(b.frontmatter.pubDate).getTime();
+
+  return dateB - dateA; // descending order
+});
+
+const latestThree = posts.slice(0, 3);
+---
+
+<BaseLayout>
+  <h1>Welcome to My Blog</h1>
+
+  <section>
+    {latestThree.length > 0 ? (
+      latestThree.map((post) => {
+        const imgSrc = post.frontmatter.image ?? 'src/assets/images/default-thumbnail.png';
+
+        return (
+          <article style="display: flex; align-items: center; margin-bottom: 2rem; gap: 1rem;">
+            <img
+              src={imgSrc}
+              alt={post.frontmatter.title}
+              width="150"
+              height="150"
+              style="object-fit: cover; border-radius: 8px;"
+            />
+            <div>
+              <h2 style="margin: 0;"><a href={post.url}>{post.frontmatter.title}</a></h2>
+              <p><small>{new Date(post.frontmatter.pubDate).toLocaleDateString('en-US', { timeZone: 'America/Los_Angeles' })}</small></p>
+              <p>{post.frontmatter.description}</p>
+              <a href={post.url}>Read more →</a>
+            </div>
+          </article>
+        );
+      })
+    ) : (
+      <p>No posts found.</p>
+    )}
+  </section>
+</BaseLayout>
+
