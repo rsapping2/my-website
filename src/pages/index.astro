@@ -47,7 +47,7 @@ const latestThree = posts.slice(0, 3);
   <section>
     {latestThree.length > 0 ? (
       latestThree.map((post) => {
-        const imgSrc = post.frontmatter.image ?? 'public/images/default-thumbnail.png';
+        const imgSrc = post.frontmatter.image ?? '/images/default-thumbnail.png';
 
         return (
           <article style="display: flex; align-items: center; margin-bottom: 2rem; gap: 1rem;">
