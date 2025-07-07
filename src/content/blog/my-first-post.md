@@ -1,9 +1,7 @@
 ---
-title: "My post title"
-pubDate: "2025-05-28"
-description: "Short description of the post."
-tags: ["tutorial", "astro"]
+title: "Place Holder"
+pubDate: "2025-07-06"
+description: "More Blog posts to come."
+tags: ["tutorial"]
 ---
 
-Content of the post goes here.
-blah blah blaah
