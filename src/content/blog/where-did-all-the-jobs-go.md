@@ -15,7 +15,7 @@ There likely isn't a single answer, but there are 3 big forces that hit once.
 - Layoffs swept through tech, from startups to the big FAANG companies.
 
 
-#### 2. AI - "They took replaced people"
+#### 2. AI - "AI replaced me!"
 - Tools like ChatGPT and GitHub Copilot are automating work that junior devs used to handle. 
 - Teams can now do more with fewer people, while moving faster.
 - It looks like some companies are not even listing entry level roles anymore and just letting AI fill in the gaps.
