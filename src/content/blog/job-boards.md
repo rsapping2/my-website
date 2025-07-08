@@ -9,32 +9,32 @@ tags: ["job boards", "remote jobs"]
 
 ### [1. LinkedIn](https://www.linkedin.com)  
 *Tags: networking, dev, devops, management, remote work*  
-The number one platform for professional networking, job searching, and building your career persona. Offers a huge range of tech and non tech roles, including remote, hybrid, and onsite positions at various locations.  
-**Pro:** Excellent networking opportunities and recruiter visibility.  
+Its LinkedIn, what else is there to say? It has a little bit of everything. Mostly free, with some premeium features. 
+**Pro:** Arguably the best placec for networking opportunities and recruiter visibility.  
 **Con:** Hundreds or thousands of people can apply to a listing maxing out a job post in a metter of hours.
 
 ### [2. Indeed](https://www.indeed.com)  
 *Tags: general, dev, devops, remote work, management*  
-One of the largest job aggregators worldwide. It collects job listings from company websites and boards across all industries, including a massive number of tech roles.  
+One of the largest job aggregators worldwide.  
 **Pro:** Very large volume of listings.  
-**Con:** Quality of listings varies, can have lots of spam or outdated postings.
+**Con:** Quality of listings do vary and often times has spammy or outdated postings.
 
 ### [3. ZipRecruiter](https://www.ziprecruiter.com/jobseeker/home)  
-*Tags: AI matching, dev, devops, remote work, recruiters*  
-An AI powered platform that matches your profile with relevant jobs, aggregates listings from multiple sources, and alerts you when employers engage with your applications.  
+*Tags: dev, devops, remote work, recruiters*  
+ZipRecruiter works by matching your profile with relevant jobs with listings from multiple sources. 
 **Pro:** Personalized job recommendations and alerts.  
 **Con:** Requires creating a detailed profile to get the best matches.
 
 ### [4. We Work Remotely](https://weworkremotely.com)  
 *Tags: remote work, dev, design, marketing, product management*  
 One of the largest and most popular remote job boards, focusing primarily on tech, design, and marketing roles.  
-**Pro:** Focused exclusively on remote jobs with high quality listings.  
+**Pro:** Focused on remote jobs with high quality listings.  
 **Con:** Listings are highly competitive due to its popularity.
 
 ### [5. Remote OK](https://remoteok.com)  
 *Tags: remote work, dev, design, marketing, support*  
 A highly tailed to remote jobs featuring tech, marketing, and support roles with filters and salary estimates.
-**Pro:** Regularly updated and includes salary data.  
+**Pro:** Keep updated includes salary data.  
 **Con:** Some listings may be freelance or contract only, which isn’t ideal for all.
 
 ### [6. Dice](https://www.dice.com)  
