@@ -56,39 +56,121 @@ for (const tag in postsByTag) {
   );
 }
 
+// Sort untagged posts by date descending
 untagged.sort((a, b) =>
   (b.frontmatter.pubDate as Date).getTime() - (a.frontmatter.pubDate as Date).getTime()
+);
+
+// Sort all posts by date descending
+const allPosts = [...posts].sort(
+  (a, b) =>
+    (b.frontmatter.pubDate as Date).getTime() - (a.frontmatter.pubDate as Date).getTime()
 );
 ---
 
 <BaseLayout>
-  <h1>All Posts by Tag</h1>
+  <h1>Blog Posts</h1>
 
-  {sortedTags.map((tag) => (
-    <>
-      <h2>{tag}</h2>
-      <ul>
-        {postsByTag[tag].map((post) => (
-          <li>
-            {(post.frontmatter.pubDate as Date).toDateString()} – 
-            <a href={post.url}> {post.frontmatter.title}</a>
-          </li>
-        ))}
-      </ul>
-    </>
-  ))}
+  <nav class="tabs" role="tablist" aria-label="Filter posts by tag">
+    <button role="tab" aria-selected="true" data-tag="all" class="active">All</button>
+    {sortedTags.map((tag) => (
+      <button role="tab" aria-selected="false" data-tag={tag}>{tag}</button>
+    ))}
+    {untagged.length > 0 && <button role="tab" aria-selected="false" data-tag="untagged">Untagged</button>}
+  </nav>
 
-  {untagged.length > 0 && (
-    <>
-      <h2>Untagged</h2>
-      <ul>
-        {untagged.map((post) => (
-          <li>
-            {(post.frontmatter.pubDate as Date).toDateString()} – 
-            <a href={post.url}> {post.frontmatter.title}</a>
-          </li>
-        ))}
-      </ul>
-    </>
-  )}
+  <section id="posts-list" role="tabpanel">
+    <ul>
+      {allPosts.map((post) => (
+        <li data-tags={post.frontmatter.tags?.join(',') ?? ''}>
+          {(post.frontmatter.pubDate as Date).toDateString()} – 
+          <a href={post.url}>{post.frontmatter.title}</a>
+        </li>
+      ))}
+    </ul>
+  </section>
+
+  <script>
+    if (typeof window !== 'undefined') {
+      window.addEventListener('DOMContentLoaded', () => {
+        // Tell TS postsList is not null (non-null assertion)
+        const postsList = document.getElementById('posts-list')!;
+        const buttons = document.querySelectorAll('.tabs button');
+
+        // Cast postsList.querySelectorAll('li') to an array of HTMLLIElement
+        const allPosts = Array.from(postsList.querySelectorAll('li')) as HTMLLIElement[];
+
+        function renderPosts(posts: HTMLLIElement[]) {
+          postsList.innerHTML = '';
+          if (posts.length === 0) {
+            postsList.innerHTML = '<p>No posts found.</p>';
+            return;
+          }
+          const ul = document.createElement('ul');
+          posts.forEach((li) => ul.appendChild(li));
+          postsList.appendChild(ul);
+        }
+
+        buttons.forEach((button) => {
+          button.addEventListener('click', () => {
+            // Remove active from all buttons
+            buttons.forEach((btn) => {
+              btn.classList.remove('active');
+              btn.setAttribute('aria-selected', 'false');
+            });
+
+            // Add active to clicked button
+            button.classList.add('active');
+            button.setAttribute('aria-selected', 'true');
+
+            // TS: Cast button to HTMLElement & use dataset safely
+            const tag = (button as HTMLElement).dataset.tag;
+
+            if (tag === 'all') {
+              renderPosts(allPosts);
+            } else if (tag === 'untagged') {
+              renderPosts(allPosts.filter(li => !li.dataset.tags || li.dataset.tags.trim() === ''));
+            } else {
+              renderPosts(allPosts.filter(li => {
+                const tags = li.dataset.tags ? li.dataset.tags.split(',') : [];
+                return tags.includes(tag!);
+              }));
+            }
+          });
+        });
+      });
+    }
+  </script>
+
+  <style>
+    .tabs {
+      margin: 1rem 0;
+    }
+    .tabs button {
+      margin-right: 0.5rem;
+      padding: 0.5rem 1rem;
+      cursor: pointer;
+      background: none;
+      border: 1px solid #ccc;
+      border-radius: 4px;
+      font-size: 1rem;
+      transition: background-color 0.2s ease;
+    }
+    .tabs button.active,
+    .tabs button[aria-selected="true"] {
+      font-weight: bold;
+      border-color: #333;
+      background-color: #eee;
+    }
+    .tabs button:hover:not(.active) {
+      background-color: #f0f0f0;
+    }
+    ul {
+      list-style: none;
+      padding-left: 0;
+    }
+    li {
+      margin-bottom: 0.5rem;
+    }
+  </style>
 </BaseLayout>

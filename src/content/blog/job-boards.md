@@ -3,6 +3,7 @@ title: "From LinkedIn to Hidden Gems: Job Boards You’ll Actually Use"
 pubDate: "2025-07-01"
 description: "A quick look at the job boards for software engineers, DevOps, and workers in tech."
 tags: ["job", "boards", "remote", "jobs"]
+image: "/images/job_board.png" 
 ---
 
 # Top 10 Job Boards for Tech and Remote Work
