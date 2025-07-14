@@ -8,7 +8,7 @@ image: "/images/garden.png"
 
 # Welcome to My Software Engineering & DevOps Blog!
 
-Hello and welcome to my Blog! 
+Hello and welcome to Rob's Tips! 
 
 Welcome to the first post on this blog! I’ll be sharing practical tips, tutorials, and insights from software engineering and DevOps. I also plan to cover topics like job hunting and interview prep, and other topics.
 

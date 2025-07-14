@@ -73,7 +73,7 @@ Note: Powered by Indeed.
 
 The platforms above are ranked in the order I personally found them most helpful. This ranking reflects a combination of factors including: how easy each site was to navigate, the quality and relevance of the job listings I found, how widely each platform is used within my professional network, and reviews and/or feedback I’ve come across from others. While traffic and job volume are important, my focus was on the actual user experience and usefulness when actively searching for remote and tech related roles, for myself.  
   
-For the job boards listed below, I briefly looked at them, but didn't sign up for them or use them personally. If any peak your intestst, I recommend taking a look at them.  
+For the job boards listed below, I briefly looked at them, but didn't sign up for them all of them or use them personally. If any peak your intestst, I recommend taking a look at them.  
 
 # Others Worth Mentioning
 
