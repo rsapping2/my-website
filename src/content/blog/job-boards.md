@@ -83,35 +83,23 @@ A subscription based job board focusing on vetted remote, freelance, and flexibl
 **Pro:** High quality postings, vetted listings with fraud protection.  
 **Con:** Requires a paid subscription to access listings.  
 
-### [Remotive](https://remotive.io)
-Remote first job board with salary info and timezone filtering. Strong in tech and customer support roles.  
-  
-**Pro:** Focused community with clear remote job emphasis.  
-**Con:** Smaller number of listings compared to bigger boards.  
-
-### [Jobspresso](https://jobspresso.co)
-Curated remote jobs suitable for flexible schedules in tech, marketing, and customer support.
-  
-**Pro:** Handpicked quality remote jobs.  
-**Con:** Limited volume of job postings.  
-
 ### [Toptal](https://www.toptal.com)
 Exclusive freelance network for developers, designers, and finance experts.  
   
 **Pro:** Access to premium clients and high pay rates.  
-**Con:** Rigorous screening process; not for beginners.  
+**Con:** In depth screening process.  
 
 ### [JS Remotely](https://jsremotely.com)
 Specialized job board for JavaScript developers seeking remote positions.  
   
 **Pro:** Niche focus helps find targeted JS roles.  
-**Con:** Smaller, more limited job pool.  
+**Con:** Smaller job pool.  
 
 ### [AI Jobs](https://ai-jobs.net)
 Curated list focused on roles in artificial intelligence and data science.  
   
 **Pro:** Specialized listings in a fast growing field.  
-**Con:** Limited to AI related jobs only.  
+**Con:** Limited to AI related jobs.  
 
 ### [HackerRank Jobs](https://www.hackerrank.com/jobs)
 Jobs connected to coding challenge performance, great for proving skills.  
@@ -125,18 +113,6 @@ Jobs at YC backed startups, ideal for engineers and designers wanting to join hi
 **Pro:** Access to top tier startup opportunities.  
 **Con:** Startups can be high risk and demanding environments.  
 
-### [TechCareers](https://www.techcareers.com)
-Long standing board focused on IT and engineering jobs.  
-  
-**Pro:** Wide variety of IT and engineering roles.  
-**Con:** Interface and search tools feel outdated.  
-
-### [The Muse](https://www.themuse.com/jobs)
-Offers job listings plus behind the scenes company insights and career resources.  
-  
-**Pro:** Great company culture info to help with fit.  
-**Con:** Smaller number of tech jobs compared to general boards.  
-
 ### [VentureLoop](https://www.ventureloop.com)
 Venture backed startup job board, heavy on tech and product roles.  
   
@@ -147,46 +123,40 @@ Venture backed startup job board, heavy on tech and product roles.
 TechCrunch’s official job board with listings at startups and tech companies.  
   
 **Pro:** Access to jobs at well known startups and tech firms.  
-**Con:** Less frequently updated than other boards.  
-
-### [Remote Women](https://remotewomen.com)
-Job board focused on remote roles supporting women in tech and related fields.  
-  
-**Pro:** Inclusive focus supporting diversity.  
-**Con:** Smaller niche community and job volume.  
-
-### [Remote.co](https://remote.co)
-A job board that focuses entirely on remote work, with listings across a wide range of industries including tech, education, and HR.  
-  
-**Pro:** Offers helpful remote work guides and resources alongside job listings.  
-**Con:** Fewer tech specific roles and listings can be U.S. centric.  
-
-### [Working Nomads](https://www.workingnomads.co)
-Curated job board for digital nomads and remote workers, especially in development and tech. Sends email digests based on preferences.  
-  
-**Pro:** Developer heavy listings and reliable updates.  
-**Con:** Limited filtering options.  
-
-### [Flexa](https://flexa.careers)
-A platform focused on transparency in flexible working. Jobs are verified to ensure flexibility and remote friendliness.  
-  
-**Pro:** Verified companies and a strong focus on work life balance.  
-**Con:** Mostly UK/EU focused and smaller volume than global boards.  
-
-### [Remote Hub](https://remotehub.com)
-A marketplace for remote professionals offering job postings, portfolios, and freelance gigs. Combines elements of a job board and talent platform.  
-  
-**Pro:** Combines job search with portfolio visibility.  
-**Con:** Less well known with lower traffic and fewer job listings.  
-
-### [TryRemotely](https://tryremotely.com)
-Lesser known platform with listings and a clean UI, focused on helping people find remote work globally.  
-  
-**Pro:** Simple interface and focused mission.  
-**Con:** Lower visibility and small listing volume.  
+**Con:** Looks less frequently updated than other boards.  
 
 ### [JobBoardSearch](https://jobboardsearch.com)
 An aggregator that lists jobs pulled from various tech focused and remote job boards. Helpful for discovery.   
   
 **Pro:** Centralized access to many job boards.  
 **Con:** No unique listings; depends on third-party sources.(Source: https://news.ycombinator.com/item?id=32967144)  
+
+### [Remotive](https://remotive.io)
+Remote first job board with salary info and timezone filtering. Strong in tech and customer support roles.  
+
+### [Jobspresso](https://jobspresso.co)
+Curated remote jobs suitable for flexible schedules in tech, marketing, and customer support.
+
+### [TechCareers](https://www.techcareers.com)
+Long standing board focused on IT and engineering jobs.  
+
+### [The Muse](https://www.themuse.com/jobs)
+Offers job listings plus behind the scenes company insights and career resources.    
+
+### [Remote Women](https://remotewomen.com)
+Job board focused on remote roles supporting women in tech and related fields.  
+
+### [Remote.co](https://remote.co)
+A job board that focuses entirely on remote work, with listings across a wide range of industries including tech, education, and HR.    
+
+### [Working Nomads](https://www.workingnomads.co)
+Curated job board for digital nomads and remote workers, especially in development and tech. Sends email digests based on preferences.  
+
+### [Flexa](https://flexa.careers)
+A platform focused on transparency in flexible working. Jobs are verified to ensure flexibility and remote friendliness.  
+
+### [Remote Hub](https://remotehub.com)
+A marketplace for remote professionals offering job postings, portfolios, and freelance gigs. Combines elements of a job board and talent platform.   
+
+### [TryRemotely](https://tryremotely.com)
+Lesser known platform with listings and a clean UI, focused on helping people find remote work globally.   
