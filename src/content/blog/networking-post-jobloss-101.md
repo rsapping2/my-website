@@ -16,19 +16,19 @@ Networking is likely the most important tool you can use while applying for jobs
 While I still apply to jobs via job boards and company portals, there are a few other strategies I’ve noticed that offer a much better return on investment:
 
 1. Start a Network
-- Create a LinkedIn profile. Add a profile picturre, and a compelling headline. Fill out your work experience, skills and any certifications. Link you profile to your Github, portfolio, or other projects. If you are new to networking, start small, just get your presence established.
+- Create a LinkedIn profile. Add a profile picture, and a compelling headline. Fill out your work experience, skills and any certifications. Link your profile to your Github, portfolio, or other projects. If you are new to networking, start small, just get your presence established.
 
 2. Grow Your Network
-- Once you have a profile, you can begin networking. Reach out to former coworkers, claassmates, or colleagues. Join online communities on Slack, Discord, Reddit, or other areas focused on your field (Devops, Cloud Engineering, Fronend, Backend, QA, ect). Don't be afraid to send messages or to connect with people who work at companies you want to work for. This is where the real networking happens.
+- Once you have a profile, you can begin networking. Reach out to former coworkers, classmates, or colleagues. Join online communities on Slack, Discord, Reddit, or other areas focused on your field (Devops, Cloud Engineering, Fronend, Backend, QA, ect). Don't be afraid to send messages or to connect with people who work at companies you want to work for. This is where the real networking happens.
 
 3. Engage with your network
-- Don't just add people, you need to interact with them and their posts. Like and comment on other people's posts, share relevant content yourself, or aask throughful questions. The goal is to provide some value in discussions, even if its shararing articles, tutorials, updates on your job search or your side projects. The more you show up, the more memorabale you become, and the more likely people will think of you when a role opens don't. But word of caution, don't spam. This is your chance to share your story!
+- Don't just add people, you need to interact with them and their posts. Like and comment on other people's posts, share relevant content yourself, or ask thoughtful questions. The goal is to provide some value in discussions, even if its sharing articles, tutorials, updates on your job search or your side projects. The more you show up, the more memoraable you become, and the more likely people will think of you when a role opens. But word of caution, don't spam. This is your chance to share your story!
 
 4. Ask for help, but don't beg or complain
-- Once you have connectionss, or belong to a community, its fine to ask for guidance, feedback or refereals. Just don't lead with "can you refer me", instead ask for advice like "I saw you work at xyz, I am exploring similar roles, do you have any tips on how to stand out in their interview process?" Be specific about the roles or teams you are interested in. And be ready to offer your resume and/or portofilio to make it easaier for them to help you.
+- Once you have connections, or belong to a community, its fine to ask for guidance, feedback or referrals. Just don't lead with "can you refer me", instead ask for advice like "I saw you work at xyz, I am exploring similar roles, do you have any tips on how to stand out in their interview process?" Be specific about the roles or teams you are interested in. And be ready to offer your resume and/or portfolio to make it easier for them to help you.
 
 5. Keep track, and follow up!
-- The common saying is networking isn't one and done, its a system, and the is still true. Use a spreadsheet, notion, or some other system to keep traack on who you reached out to, and what you discussed, and when to follow up. Check in with people occasionally, expecially if they helped you before. Lastly, don't forget to celebratae wins and share them with your newtwork. 
+- The common saying is networking isn't one and done, its a system, and this is still true. Use a spreadsheet, notion, or some other system to keep track of who you reached out to, what you discussed, and when to follow up. Check in with people occasionally, especially if they helped you before. Lastly, don't forget to celebrate wins and share them with your network. 
 
 ### How to Grow Your Network (Especially After a Job Loss)
 
@@ -36,7 +36,7 @@ While I still apply to jobs via job boards and company portals, there are a few 
 - If you haven’t already, create a LinkedIn profile. Connect it to your GitHub, LeetCode, portfolio, or personal projects. Add your job history, fill out your skills, and start by connecting with people you’ve worked with in the past.
 
 2. LinkedIn - Part 2: Add People You Know
-- Start by looking at your former classmates, former and current coworkers, past vendor connections, military alumni, or any other group you use to connect with. Its also worth noting, many college or universities have Linkedin groups, private slack channels or job boards for alumni. 
+- Start by looking at your former classmates, former and current coworkers, past vendor connections, military alumni, or any other group you use to connect with. Its also worth noting, many colleges or universities have Linkedin groups, private slack channels or job boards for alumni. 
 
 3. LinkedIn – Part 3: Find People with Shared Interests
 - Join LinkedIn groups related to DevOps, TypeScript, cloud engineering, etc. Start conversations, make connections, and engage. This helps you discover job posts and build trust with people in your niche.
@@ -70,4 +70,4 @@ While I still apply to jobs via job boards and company portals, there are a few 
 Their effectiveness depends on the industry, company size, and the current job market. With fewer open roles in 2025, outreach from recruiters may be less reliable than before, but building relationships with recruiters in your niche can still lead to great opportunities.
 
 ### Bottom Line
-In today’s highly competitive and ever so shrinking job market, building and growing your professional network is essential to stand out and get a real shot at securing tthe opportunities you are aiming for. By establishing a strong presence on platforms like LinkedIn, engaging with communities, seeking thoughtful advice, and maintaining relationships, you create meaningful connections that can directly lead to new connections, introductions and opporuntieis. When you consistently engage by sharing your thoughts, joining conversations, and supporting others, you stay visible and build trust. Over time, this kind of genuine interaction can open doors and lead to real job opportunities.
+In today’s highly competitive and ever so shrinking job market, building and growing your professional network is essential to stand out and get a real shot at securing the opportunities you are aiming for. By establishing a strong presence on platforms like LinkedIn, engaging with communities, seeking thoughtful advice, and maintaining relationships, you create meaningful connections that can directly lead to new connections, introductions and opportunities. When you consistently engage by sharing your thoughts, joining conversations, and supporting others, you stay visible and build trust. Over time, this kind of genuine interaction can open doors and lead to real job opportunities.
