@@ -6,7 +6,6 @@ tags: ["JobSearch", "Networking", "Tips", "Tech", "Careers", "Career", "Advice",
 image: "/images/networking.png" 
 ---
 
-
 # Networking
 
 Networking is likely the most important tool you can use while applying for jobs in today’s climate (Summer 2025). Applying to hundreds of jobs on job boards no longer cuts it and job hunting is no longer just a numbers game. It’s about who you know, and who can help you get your foot in the door.
@@ -19,12 +18,12 @@ While I still apply to jobs via job boards and company portals, there are a few 
 - Create a LinkedIn profile. Add a profile picture, and a compelling headline. Fill out your work experience, skills and any certifications. Link your profile to your Github, portfolio, or other projects. If you are new to networking, start small, just get your presence established.
 
 2. Grow Your Network
-- Once you have a profile, you can begin networking. Reach out to former coworkers, classmates, or colleagues. Join online communities on Slack, Discord, Reddit, or other areas focused on your field (Devops, Cloud Engineering, Fronend, Backend, QA, ect). Don't be afraid to send messages or to connect with people who work at companies you want to work for. This is where the real networking happens.
+- Once you have a profile, you can begin networking. Reach out to former coworkers, classmates, or colleagues. Join online communities on Slack, Discord, Reddit, or other areas focused on your field (Devops, Cloud Engineering, Frontend, Backend, QA, ect). Don't be afraid to send messages or to connect with people who work at companies you want to work for. This is where the real networking happens.
 
 3. Engage with your network
-- Don't just add people, you need to interact with them and their posts. Like and comment on other people's posts, share relevant content yourself, or ask thoughtful questions. The goal is to provide some value in discussions, even if its sharing articles, tutorials, updates on your job search or your side projects. The more you show up, the more memoraable you become, and the more likely people will think of you when a role opens. But word of caution, don't spam. This is your chance to share your story!
+- Don't just add people, you need to interact with them and their posts. Like and comment on other people's posts, share relevant content yourself, or ask thoughtful questions. The goal is to provide some value in discussions, even if its sharing articles, tutorials, updates on your job search or your side projects. The more you show up, the more memorable you become, and the more likely people will think of you when a role opens. But word of caution, don't spam. This is your chance to share your story!
 
-4. Ask for help, but don't beg or complain
+4. Ask for references, but don't beg or complain
 - Once you have connections, or belong to a community, its fine to ask for guidance, feedback or referrals. Just don't lead with "can you refer me", instead ask for advice like "I saw you work at xyz, I am exploring similar roles, do you have any tips on how to stand out in their interview process?" Be specific about the roles or teams you are interested in. And be ready to offer your resume and/or portfolio to make it easier for them to help you.
 
 5. Keep track, and follow up!
@@ -60,7 +59,7 @@ While I still apply to jobs via job boards and company portals, there are a few 
 - Reddit can be hit or miss, but subs like r/devops, r/cscareerquestions, and r/linuxadmin can be helpful for advice, referrals, or building informal connections.
 
 10. Slack or Discord Communities
-- You can join engineering communities on Slack like the Kubernetes Slack, Platform Engineering Slack, or HashiCorp Community. These aren’t job boards, but they’re filled with experienced engineers who share advice and sometimes opportunities. To find communities of intersted, you can search on Linkedin or through Google.
+- You can join engineering communities on Slack like the Kubernetes Slack, Platform Engineering Slack, or HashiCorp Community. These aren’t job boards, but they’re filled with experienced engineers who share advice and sometimes opportunities. To find communities of interested, you can search on Linkedin or through Google.
 
 11. Events
 - Local meetups, hackathons, and conferences (like DevOpsDays or KubeCon) are excellent opportunities to network in person. Once you've built some online connections, attending events can deepen relationships and open new doors. You can find these events through your network, LinkedIn, or by just Googling local tech meetups in your area.
@@ -68,7 +67,21 @@ While I still apply to jobs via job boards and company portals, there are a few 
 12. Recruiters
 - Recruiters can still be valuable, but not all are created equal.
 Their effectiveness depends on the industry, company size, and the current job market. With fewer open roles in 2025, outreach from recruiters may be less reliable than before, but building relationships with recruiters in your niche can still lead to great opportunities.
-- One of the easiest places to meet recruiters is on Linkedin. I personally find a lot of fake accounts as well, so do due diligence when reaching out. Before you reach out, try to first follow a recruiter. Then you can commoent on posts or interests, and eeventually connect with a message. Ensure your message is customized based on a job they posted, a company you are interested in, and/or a shared connection or background.
+- One of the easiest places to meet recruiters is on Linkedin. I personally find a lot of fake accounts as well, so do due diligence when reaching out. Before you reach out, try to first follow a recruiter. Then you can comment on posts or interests, and eventually connect with a message. Ensure your message is customized based on a job they posted, a company you are interested in, and/or a shared connection or background.
+
+### How to reach out to someone
+- Once someone accepts your connection request on a platform (lets say Linkedin), don’t immediately jump into asking for a referral. Give it a little time to engage with them. Engage with their posts if they share any, or wait a few days and follow up with a thoughtful message. When you do reach out, be respectful, specific, and clear about your goal. 
+
+- For new connections you could start by thanking them for the connection, and briefly introduce yourself and share why you’re reaching out. 
+
+Example: “Hi [Name], thanks for connecting! I’ve been exploring opportunities in [field/role] and saw that [you work at / recruit for] [Company]. I’m really interested in [specific team or position] and was wondering if you’d be open to sharing any tips on how to stand out during application process or interview?"
+
+- For people that you use to know
+This is for people you used to work with, went to school with or people you already know. Here you can be a little more direct. Its best to start to reach out by simply catching up. You should naturally get to the point of saying you are looking for new opportunities and ask them if they know of any openings. Based on their response, you can likely ask for a reference. 
+
+Example: “Hey [Name], it’s been a while! How have you been? I saw you’re working at [Company] now, how is it there?” 
+
+The key to reaching out is starting a genuine interaction with the person you message. Show real interest in their post, work, ect. and then, if it makes sense, ask for help or reference. It helps ease into the conversation and creates a sense of connection before making an ask.
 
 ### Bottom Line
 In today’s highly competitive and ever so shrinking job market, building and growing your professional network is essential to stand out and get a real shot at securing the opportunities you are aiming for. By establishing a strong presence on platforms like LinkedIn, engaging with communities, seeking thoughtful advice, and maintaining relationships, you create meaningful connections that can directly lead to new connections, introductions and opportunities. When you consistently engage by sharing your thoughts, joining conversations, and supporting others, you stay visible and build trust. Over time, this kind of genuine interaction can open doors and lead to real job opportunities.
