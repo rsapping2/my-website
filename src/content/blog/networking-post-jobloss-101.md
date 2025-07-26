@@ -60,7 +60,7 @@ While I still apply to jobs via job boards and company portals, there are a few 
 - Reddit can be hit or miss, but subs like r/devops, r/cscareerquestions, and r/linuxadmin can be helpful for advice, referrals, or building informal connections.
 
 10. Slack or Discord Communities
-- You can join engineering communities on Slack like the Kubernetes Slack, Platform Engineering Slack, or HashiCorp Community. These aren’t job boards, but they’re filled with experienced engineers who share advice and sometimes opportunities.
+- You can join engineering communities on Slack like the Kubernetes Slack, Platform Engineering Slack, or HashiCorp Community. These aren’t job boards, but they’re filled with experienced engineers who share advice and sometimes opportunities. To find communities of intersted, you can search on Linkedin or through Google.
 
 11. Events
 - Local meetups, hackathons, and conferences (like DevOpsDays or KubeCon) are excellent opportunities to network in person. Once you've built some online connections, attending events can deepen relationships and open new doors. You can find these events through your network, LinkedIn, or by just Googling local tech meetups in your area.
@@ -68,6 +68,7 @@ While I still apply to jobs via job boards and company portals, there are a few 
 12. Recruiters
 - Recruiters can still be valuable, but not all are created equal.
 Their effectiveness depends on the industry, company size, and the current job market. With fewer open roles in 2025, outreach from recruiters may be less reliable than before, but building relationships with recruiters in your niche can still lead to great opportunities.
+- One of the easiest places to meet recruiters is on Linkedin. I personally find a lot of fake accounts as well, so do due diligence when reaching out. Before you reach out, try to first follow a recruiter. Then you can commoent on posts or interests, and eeventually connect with a message. Ensure your message is customized based on a job they posted, a company you are interested in, and/or a shared connection or background.
 
 ### Bottom Line
 In today’s highly competitive and ever so shrinking job market, building and growing your professional network is essential to stand out and get a real shot at securing the opportunities you are aiming for. By establishing a strong presence on platforms like LinkedIn, engaging with communities, seeking thoughtful advice, and maintaining relationships, you create meaningful connections that can directly lead to new connections, introductions and opportunities. When you consistently engage by sharing your thoughts, joining conversations, and supporting others, you stay visible and build trust. Over time, this kind of genuine interaction can open doors and lead to real job opportunities.
