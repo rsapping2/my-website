@@ -38,9 +38,17 @@ const { children } = Astro.props;
       }
 
       main {
-        max-width: 700px;
-        margin: 2rem auto;
+        max-width: 90%;       /* content will take up 90% of viewport width */
+        width: 100%;          /* ensures it can shrink on smaller screens */
+        margin: 2rem auto;    /* centers content */
         padding: 0 1rem;
+        box-sizing: border-box;
+      }
+
+      @media (min-width: 1024px) {
+        main {
+          max-width: 1200px;  /* caps width on large screens */
+        }
       }
 
       footer {

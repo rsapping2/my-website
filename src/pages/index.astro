@@ -13,7 +13,7 @@ interface PostModule {
 //const postImports = import.meta.glob('../../content/blog/*.md', { eager: true });
 const postImports = import.meta.glob('../content/blog/*.md');
 
-console.log("Immports");
+console.log("Imports");
 
 console.log(Object.keys(postImports));
 
@@ -47,10 +47,11 @@ const latestThree = posts.slice(0, 5);
   <section>
     {latestThree.length > 0 ? (
       latestThree.map((post) => {
-        const imgSrc = post.frontmatter.image ?? '/images/default.png';
+        const imgSrc = post.frontmatter?.image || '/images/default.png';
+
 
         return (
-          <article style="display: flex; align-items: center; margin-bottom: 2rem; gap: 1rem;">
+            <article style="display: flex; align-items: flex-start; margin-bottom: 3rem; gap: 1rem;">
             {/* <img
               src={imgSrc}
               alt={post.frontmatter.title}
@@ -62,12 +63,14 @@ const latestThree = posts.slice(0, 5);
               src={imgSrc}
               alt={post.frontmatter.title}
               style={{
-                width: '300px',
+                width: '225px',
                 height: '150px',
                 objectFit: 'cover',
                 borderRadius: '8px',
+                flexShrink: 0,
                 display: 'block' // optional, for layout consistency
               }}
+              loading="lazy"
             />
             <div>
               <h2 style="margin: 0;"><a href={post.url}>{post.frontmatter.title}</a></h2>
