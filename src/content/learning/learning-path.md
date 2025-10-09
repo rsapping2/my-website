@@ -7,15 +7,29 @@ tags: ["DevOps","learning", "path"]
 Note: This page is an on going work in progress. I'll update the last updated tag when I update this page.
 
 #### TODOS: Work to add to this page
-- For each section, add projects.
-- For each section, tie in interview questions.
-- Finish writing out section 4
+- For each section
+  -  add projects.
+  - Add practice interview questions.
+
 ---
 
 ## Phase 1: Core Refresh & Cloud Infrastructure
 
-### 1. Learning a Programming language
-**Key Areas:**: Python, Go
+### 1. Version Control (Git)
+**Key Areas:** Git workflows, branching strategies, collaboration
+- **Learn at:**
+  - [Git Documentation](https://git-scm.com/doc)
+  - [Atlassian Git Tutorials](https://www.atlassian.com/git/tutorials)
+  - [GitHub Learning Lab](https://lab.github.com/)
+- **You should at minimum be able to:**
+  - Use basic Git commands (clone, add, commit, push, pull)
+  - Create and merge branches
+  - Resolve merge conflicts
+  - Use GitHub/GitLab for collaboration (PRs, issues, reviews)
+  - Understand Git workflows (GitFlow, GitHub Flow)
+
+### 2. Learning a Programming Language
+**Key Areas:** Python, Go
 - **Learn at:**
   - [python.org](https://docs.python.org/3/tutorial/index.html)
   - [A Tour of Go](https://go.dev/tour/welcome/1)
@@ -27,7 +41,7 @@ Note: This page is an on going work in progress. I'll update the last updated ta
   - For Go, write simple programs with concurrency concepts
 
 
-### 2. Operating System (Linux) and Terminal
+### 3. Operating System (Linux) and Terminal
 
 #### A. Linux / Ubuntu / Debian
 
@@ -57,15 +71,28 @@ Note: This page is an on going work in progress. I'll update the last updated ta
     - Understand basic systemd concepts and cron jobs
 
 
-### 3. Cloud Fundamentals
+### 4. Networking Fundamentals
+**Key Areas:** TCP/IP, DNS, load balancing, firewalls, cloud networking
+- **Learn at:**
+  - [Computer Networks Course](https://www.coursera.org/learn/computer-networking)
+  - [AWS Networking Fundamentals](https://aws.amazon.com/training/learning-paths/networking/)
+  - [Google Cloud Networking](https://cloud.google.com/learn/what-is-cloud-networking)
+- **You should at minimum be able to:**
+  - Understand TCP/IP stack and common protocols
+  - Configure DNS and understand domain resolution
+  - Set up basic firewall rules and security groups
+  - Understand load balancing concepts
+  - Configure VPCs, subnets, and routing in cloud platforms
+
+### 5. Cloud Fundamentals
 
 - Ideally you should have a good understanding of a cloud provider. It really doesn't matter between the large providers, as their market share isn't too drastic. My recommendation is AWS. 
 
-### A. General Cloud Infrastructure
+#### A. General Cloud Infrastructure
 - **Learn at:**
   - [Introduction to Cloud Infrastructure Technologies (LFS151)](https://training.linuxfoundation.org/training/introduction-to-cloud-infrastructure-technologies/)
 
-#### B. AWS Fundamentals (Recommended)
+##### B. AWS Fundamentals (Recommended)
 **Key Areas:** IAM, VPC, EC2, S3, CloudWatch, Lambda, CLI, CloudFormation or Terraform  
 - **Learn at:**
   - [AWS Skill Builder](https://skillbuilder.aws/)
@@ -81,7 +108,7 @@ Note: This page is an on going work in progress. I'll update the last updated ta
     - Run simple Lambda functions and understand event triggers  
     - Write and deploy basic infrastructure as code (IaC) via CloudFormation or Terraform  
 
-### C. GCP Fundamentals (Alternative)
+#### C. GCP Fundamentals (Alternative)
 **Key Areas:** IAM, Compute Engine, Cloud Functions, GCS, VPC, Cloud Logging  
 - **Learn at:**
   - [Google Cloud Skills Boost](https://www.cloudskillsboost.google/)
@@ -101,7 +128,7 @@ Note: This page is an on going work in progress. I'll update the last updated ta
     - Use Cloud Logging for monitoring and troubleshooting  
     - Deploy simple Cloud Functions 
 
-### 4. CLI Practice & Scripting
+### 6. CLI Practice & Scripting
 **Key Areas:** Bash, pipes, grep/awk/sed, cron, jq, aws/gcloud CLI  
 - **Learn at:**
   - [ExplainShell](https://explainshell.com/)
@@ -114,6 +141,19 @@ Note: This page is an on going work in progress. I'll update the last updated ta
     - Use `jq` for JSON parsing and filtering in CLI workflows  
     - Use AWS CLI and gcloud CLI for routine cloud tasks 
 
+### 7. Database Management
+**Key Areas:** SQL basics, database migrations, backup/restore, NoSQL options
+- **Learn at:**
+  - [SQL Tutorial](https://www.w3schools.com/sql/)
+  - [PostgreSQL Documentation](https://www.postgresql.org/docs/)
+  - [MongoDB University](https://university.mongodb.com/)
+- **You should at minimum be able to:**
+  - Write basic SQL queries (SELECT, INSERT, UPDATE, DELETE)
+  - Design simple database schemas
+  - Perform database backups and restores
+  - Understand database migrations and versioning
+  - Use NoSQL databases (Redis, MongoDB) for caching and document storage
+
 ## Phase 2: Core DevOps Tools, CI/CD & Automation
 
 ### 1. Docker
@@ -121,7 +161,7 @@ Note: This page is an on going work in progress. I'll update the last updated ta
 - **Learn at:**
   - [Docker Docs](https://docs.docker.com/get-started/)
   - [Linkedin Learning](https://www.linkedin.com/learning/paths/docker-foundations-professional-certificate)
-  - [Learning Path - Terraform Associate (003) ](https://developer.hashicorp.com/terraform/tutorials/certification-003/associate-study-003)
+  - [Docker Deep Dive](https://www.udemy.com/course/docker-deep-dive-zero-to-docker-certified-associate/)
 - **Certs:** 
     - [Docker Certified Associate](https://training.mirantis.com/certification/dca-certification-exam/)
 - **You should at minimum be able to:**  
@@ -144,15 +184,23 @@ Note: This page is an on going work in progress. I'll update the last updated ta
     - Understand state files and how to manage them (local and remote backends)  
     - Organize code into modules for reuse and clarity  
     
-### 3. CI/CD Concepts & Tools
-**Key Areas:** Key skills: writing Jenkinsfiles, GitHub workflows; automating tests, builds, and artifact management.
+### 3. Secrets Management
+**Tools:** AWS Secrets Manager, Vault, GitHub secrets  
+- Securely store/rotate secrets and inject into CI/CD
+- **You should at minimum be able to:**  
+    - Store secrets securely outside code repositories  
+    - Inject secrets into pipelines and runtime environments securely  
+    - Rotate and audit secrets regularly
+
+### 4. CI/CD Concepts & Tools
+**Key Areas:** Writing Jenkinsfiles, GitHub workflows, automating tests, builds, and artifact management.
  
 - **Learn at:**
   - [GitHub Actions Docs](https://docs.github.com/en/actions)
   - [Jenkins Book](https://www.jenkins.io/doc/book/)
-  - [Jekins Official website](https://www.jenkins.io/doc/tutorials/)
+  - [Jenkins Official website](https://www.jenkins.io/doc/tutorials/)
   - [Learn DevOps: CI/CD with Jenkins using Pipelines and Docker](https://www.udemy.com/course/learn-devops-ci-cd-with-jenkins-using-pipelines-and-docker)
-  - [Github Actions](https://docs.github.com/en/actions)
+  - [GitHub Actions](https://docs.github.com/en/actions)
 - **Certs:**
   - Register For Jenkins Exam on [Cloud Bees](https://university.cloudbees.com/)
 - **You should at minimum be able to:**  
@@ -164,15 +212,7 @@ Note: This page is an on going work in progress. I'll update the last updated ta
     - Write basic Jenkins files and GitHub Actions workflows  
     - Automate running tests, builds, and artifact uploads  
     - Integrate Docker builds into pipelines  
-    - Use pipeline environment variables and secrets 
-
-### 4. Secrets Management
-**Tools:** AWS Secrets Manager, Vault, GitHub secrets  
-- Securely store/rotate secrets and inject into CI/CD
-- **You should at minimum be able to:**  
-    - Store secrets securely outside code repositories  
-    - Inject secrets into pipelines and runtime environments securely  
-    - Rotate and audit secrets regularly  
+    - Use pipeline environment variables and secrets  
 
 ## Phase 3: More Containers & Orchestration
 
@@ -183,16 +223,26 @@ Note: This page is an on going work in progress. I'll update the last updated ta
   - [Introduction to Kubernetes (LFS158)](https://training.linuxfoundation.org/training/introduction-to-kubernetes/)
 - **Certs:**
   - [Certified Kubernetes Administrator (CKA)](https://training.linuxfoundation.org/certification/certified-kubernetes-administrator-cka/)
-   - [Certified Kubernetes Security Specialist]()
-     - Little extra, but to set you aparat
+  - [Certified Kubernetes Security Specialist (CKS)](https://training.linuxfoundation.org/certification/certified-kubernetes-security-specialist/)
+  - Advanced cert to set you apart
 - **You should at minimum be able to:**  
-    - Understand core Kubernetes architecture components  
-    - Deploy applications using kubectl and YAML manifests  
-    - Manage pods, deployments, and services  
-    - Use ConfigMaps and Secrets for configuration management  
-    - Configure Ingress controllers to expose services externally 
+  - Understand core Kubernetes architecture components  
+  - Deploy applications using kubectl and YAML manifests  
+  - Manage pods, deployments, and services  
+  - Use ConfigMaps and Secrets for configuration management  
+  - Configure Ingress controllers to expose services externally 
 
-### 2. Helm & Observability
+### 2. GitOps
+**Key Areas:** ArgoCD, Flux, declarative deployment patterns
+- **Learn at:**
+  - [ArgoCD Documentation](https://argo-cd.readthedocs.io/)
+  - [Flux Documentation](https://fluxcd.io/docs/)
+- **You should at minimum be able to:**
+  - Set up GitOps workflows with ArgoCD or Flux
+  - Implement declarative deployment patterns
+  - Manage application deployments through Git
+
+### 3. Helm & Observability
 **Tools:** Helm, Prometheus, Grafana  
 - Templating, dashboards, alerts, metrics
 - **You should at minimum be able to:**  
@@ -200,10 +250,42 @@ Note: This page is an on going work in progress. I'll update the last updated ta
     - Install and configure Prometheus for metrics collection  
     - Create Grafana dashboards for visualizing metrics  
     - Set up alerts based on key performance indicators  
+
+### 4. API Management
+**Key Areas:** REST/GraphQL, API gateways, rate limiting
+- **Learn at:**
+  - [API Design Best Practices](https://docs.microsoft.com/en-us/azure/architecture/best-practices/api-design)
+- **You should at minimum be able to:**
+  - Design RESTful APIs and understand GraphQL basics
+  - Configure API gateways and rate limiting
+  - Implement API versioning and documentation
  
 ## Phase 4: SRE Mindset, Advanced Ops and Specialization
 
-### 1. Monitoring & Logging
+### 1. Troubleshooting & Debugging
+**Key Areas:** Log analysis, performance profiling, network debugging
+- **Learn at:**
+  - [Linux Performance Tools](https://www.brendangregg.com/linuxperf.html)
+  - [Debugging Distributed Systems](https://www.oreilly.com/library/view/distributed-systems-observability/9781492033431/)
+- **You should at minimum be able to:**
+  - Analyze application and system logs effectively
+  - Use performance profiling tools (htop, iostat, netstat)
+  - Debug network connectivity issues
+  - Troubleshoot container and Kubernetes problems
+  - Use debugging tools for distributed systems
+
+### 2. Documentation & Communication
+**Key Areas:** Technical writing, runbooks, incident post-mortems
+- **Learn at:**
+  - [Google Technical Writing Course](https://developers.google.com/tech-writing)
+  - [Incident Response Documentation](https://response.pagerduty.com/)
+- **You should at minimum be able to:**
+  - Write clear technical documentation and runbooks
+  - Conduct effective incident post-mortems
+  - Create system architecture diagrams
+  - Communicate technical concepts to non-technical stakeholders
+
+### 3. Monitoring & Logging
 **Key Areas:** SLIs/SLOs, alerting, log pipelines, incident response  
 - **Learn at:**
   - [Google SRE Book](https://sre.google/books/)
@@ -216,17 +298,8 @@ Note: This page is an on going work in progress. I'll update the last updated ta
     - Set up centralized log aggregation pipelines  
     - Participate in incident response workflows
 
-### 2. Advanced and Specialized Certs
-**Key Areas:**   
-- **Learn at:**
-  - TBD
-- **Certs:**
-  - Google Professional Cloud Security Engineer
-  - Certified Site Reliability Engineer (SRE)
-  - Certified OpenShift Administrator
-
-### 3. Advanced Infra automation, and Configuration Management
-**Tools:** Ansible, Cheff, Puppet 
+### 4. Advanced Infrastructure Automation and Configuration Management
+**Tools:** Ansible, Chef, Puppet 
 **Key Areas:** Configuration Management
 - **Learn at:**
   - TBD
@@ -234,8 +307,19 @@ Note: This page is an on going work in progress. I'll update the last updated ta
   - Puppet Certified Professional
   - Red Hat Certified Specialist in Ansible Automation
 
-### 4. Optional/Advanced Architecture & Cloud Strategy
-**Key Areas:**:
+### 5. Service Mesh & Microservices
+**Key Areas:** Istio, Linkerd, microservices communication patterns
+- **Learn at:**
+  - [Istio Documentation](https://istio.io/latest/docs/)
+  - [Linkerd Documentation](https://linkerd.io/2.11/overview/)
+- **You should at minimum be able to:**
+  - Understand service mesh concepts and benefits
+  - Deploy and configure Istio or Linkerd
+  - Implement traffic management and security policies
+  - Monitor microservices communication
+
+### 6. Optional/Advanced Architecture & Cloud Strategy
+**Key Areas:**
 - **Learn at:**
   - TBD
 - **Certs:**
@@ -245,7 +329,7 @@ Note: This page is an on going work in progress. I'll update the last updated ta
   - IBM Certified Solution Architect – Cloud Pak for Automation
   - Certified Agile Service Manager (CASM) or Certified ScrumMaster (CSM)
 
-### 5. Security & Cost Optimization
+### 7. Security & Cost Optimization
 **Key Areas:** IAM, MFA, budgets, encryption, tagging  
 - **Learn at:**
   - TBD
@@ -256,7 +340,7 @@ Note: This page is an on going work in progress. I'll update the last updated ta
     - Use encryption at rest and in transit  
     - Monitor and optimize cloud costs regularly 
 
-### 6. Chaos Engineering
+### 8. Chaos Engineering
 **Tools:** LitmusChaos, Gremlin  
 - Learn failure injection and resiliency testing
 - **Learn at:**
@@ -264,7 +348,17 @@ Note: This page is an on going work in progress. I'll update the last updated ta
 - **You should at minimum be able to:**  
     - Understand principles of failure injection and resiliency testing  
     - Use tools to simulate failures and validate system behavior  
-    - Analyze results and improve system fault tolerance  
+    - Analyze results and improve system fault tolerance
+
+### 9. Advanced and Specialized Certs
+**Key Areas:**   
+- **Learn at:**
+  - TBD
+- **Certs:**
+  - Google Professional Cloud Security Engineer
+  - Certified Site Reliability Engineer (SRE)
+  - Certified OpenShift Administrator
+
 
 
 ## Ongoing Practice & Interview Prep
@@ -280,7 +374,7 @@ Note: This page is an on going work in progress. I'll update the last updated ta
 
 ## Why This Order?
 
-1. **Phase 1 (Cloud + IaC)** builds the foundation. 
-2. **Phase 2 (CI/CD)** connects cloud infrastructure with delivery pipelines, which you'll need to automate and troubleshoot.
-3. **Phase 3 (Containers & K8s)** layers in packaging, deployment, and orchestration—this is the backbone of DevOps delivery at scale.
-4. **Phase 4 (SRE Mindset)** rounds out your ops maturity—observability, cost, security, and resilience are what differentiate good from great.
+**Phase 1:** Programming + Linux + Cloud fundamentals create the foundation. You need these before automating anything.
+**Phase 2:** Docker + IaC + CI/CD form the core DevOps workflow. Learn to package, provision, and deploy.
+**Phase 3:** Kubernetes + Observability handle scale. Orchestration and monitoring are essential for production systems.
+**Phase 4:** SRE practices + Advanced certs differentiate you. Focus on reliability, security, and cost optimization.

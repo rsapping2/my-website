@@ -9,10 +9,10 @@ image: "/images/job_board.png"
 # Top 10 Job Boards for Tech and Remote Work
 
 ### [1. LinkedIn](https://www.linkedin.com)
-Its LinkedIn, what else is there to say? It has a little bit of everything. Mostly free, with some premeium features.  
+It's LinkedIn, what else is there to say? It has a little bit of everything. Mostly free, with some premium features.  
   
-**Pro:** Arguably the best placec for networking opportunities and recruiter visibility.  
-**Con:** Hundreds or thousands of people can apply to a listing maxing out a job post in a metter of hours.  
+**Pro:** Arguably the best place for networking opportunities and recruiter visibility.  
+**Con:** Hundreds or thousands of people can apply to a listing maxing out a job post in a matter of hours.  
 
 ### [2. Indeed](https://www.indeed.com)
 One of the largest job aggregators worldwide.  
@@ -27,13 +27,13 @@ ZipRecruiter works by matching your profile with relevant jobs with listings fro
 **Con:** Requires creating a detailed profile to get the best matches.  
 
 ### [4. We Work Remotely](https://weworkremotely.com)  
-One of the largest and most popular remote job boards, focusing primarily on tech, design, and marketing roles. You can also Sync WWR to your Linkedin profile.  
+One of the largest and most popular remote job boards, focusing primarily on tech, design, and marketing roles. You can also sync WWR to your LinkedIn profile.  
   
 **Pro:** Focused on remote jobs with high quality listings.  
 **Con:** Listings are highly competitive due to its popularity.  
 
 ### [5. Remote OK](https://remoteok.com)
-A highly tailed to remote jobs featuring tech, marketing, and support roles with filters and salary estimates. It's worth noting that I had issues signing up. The Outlook email I had used successfully for other accounts was flagged as "bounced," and I was asked to use a different email. While attempting to do so, each username I tried became unavailable, which made the process even more frustrating.  
+A highly tailored to remote jobs featuring tech, marketing, and support roles with filters and salary estimates. It's worth noting that I had issues signing up. The Outlook email I had used successfully for other accounts was flagged as "bounced," and I was asked to use a different email. While attempting to do so, each username I tried became unavailable, which made the process even more frustrating.  
   
 **Pro:** Keep updated includes salary data.  
 **Con:** Some listings may be freelance or contract only, which isn’t ideal for all.  
@@ -51,7 +51,7 @@ Startup centric platform offering jobs at startups and fast growing companies. G
 **Con:** Startups may have less job security and lower compensation.  
 
 ### [8. Built In](https://builtin.com)
-Focused on tech jobs in major U.S. cities like NYC, Chicago, and others major cities. Includes engineering, product, and project management roles.  
+Focused on tech jobs in major U.S. cities like NYC, Chicago, and other major cities. Includes engineering, product, and project management roles.  
   
 **Pro:** Great for local tech hub opportunities and community insights.  
 **Con:** Limited to specific metropolitan areas.  
@@ -72,14 +72,14 @@ Note: Powered by Indeed.
 ---
 #### Ranked 1–10 Explained
 
-The platforms above are ranked in the order I personally found them most helpful. This ranking reflects a combination of factors including: how easy each site was to navigate, the quality and relevance of the job listings I found, how widely each platform is used within my professional network, and reviews and/or feedback I’ve come across from others. While traffic and job volume are important, my focus was on the actual user experience and usefulness when actively searching for remote and tech related roles, for myself.  
+The platforms above are ranked in the order I personally found them most helpful. This ranking reflects a combination of factors including: how easy each site was to navigate, the quality and relevance of the job listings I found, how widely each platform is used within my professional network, and reviews and/or feedback I've come across from others. While traffic and job volume are important, my focus was on the actual user experience and usefulness when actively searching for remote and tech related roles, for myself.  
   
-For the job boards listed below, I briefly looked at them, but didn't sign up for them all of them or use them personally. If any peak your intestst, I recommend taking a look at them.  
+For the job boards listed below, I briefly looked at them, but didn't sign up for all of them or use them personally. If any pique your interest, I recommend taking a look at them.  
 
 # Others Worth Mentioning
 
 ### [FlexJobs](https://www.flexjobs.com)
-A subscription based job board focusing on vetted remote, freelance, and flexible jobs across many industries including tech. Primarily focuses on remote, part-time, freelance, and flexible schedule jobs.  
+A subscription-based job board focusing on vetted remote, freelance, and flexible jobs across many industries including tech. Primarily focuses on remote, part-time, freelance, and flexible schedule jobs.  
   
 **Pro:** High quality postings, vetted listings with fraud protection.  
 **Con:** Requires a paid subscription to access listings.  
@@ -106,7 +106,7 @@ Curated list focused on roles in artificial intelligence and data science.
 Jobs connected to coding challenge performance, great for proving skills.  
   
 **Pro:** Unique skill based hiring approach helps candidates stand out.  
-**Con:** Limited to companies that use HackerRank’s platform.  
+**Con:** Limited to companies that use HackerRank's platform.  
 
 ### [Y Combinator Jobs](https://www.ycombinator.com/jobs)
 Jobs at YC backed startups, ideal for engineers and designers wanting to join high growth companies.  
@@ -118,7 +118,7 @@ Jobs at YC backed startups, ideal for engineers and designers wanting to join hi
 Venture backed startup job board, heavy on tech and product roles.  
   
 **Pro:** Focused on funded startups with growth potential.  
-**Con:** Listings lean toward start up companies.  
+**Con:** Listings lean toward startup companies.  
 
 ### [Crunchboard (TechCrunch)](https://www.crunchboard.com)
 TechCrunch’s official job board with listings at startups and tech companies.  
@@ -130,7 +130,7 @@ TechCrunch’s official job board with listings at startups and tech companies.
 An aggregator that lists jobs pulled from various tech focused and remote job boards. Helpful for discovery.   
   
 **Pro:** Centralized access to many job boards.  
-**Con:** No unique listings; depends on third-party sources.(Source: https://news.ycombinator.com/item?id=32967144)  
+**Con:** No unique listings; depends on third party sources. (Source: https://news.ycombinator.com/item?id=32967144)  
 
 ### [Remotive](https://remotive.io)
 Remote first job board with salary info and timezone filtering. Strong in tech and customer support roles.  

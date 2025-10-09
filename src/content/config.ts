@@ -8,6 +8,8 @@ const blogCollection = defineCollection({
       if (typeof arg === 'string' || arg instanceof Date) return new Date(arg);
     }, z.date()),
     tags: z.array(z.string()).optional(),
+    image: z.string().optional(),
+    // author: z.string().optional().default(""),
   }),
 });
 

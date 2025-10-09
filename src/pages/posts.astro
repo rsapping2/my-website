@@ -107,7 +107,15 @@ const allPosts = [...posts].sort(
             return;
           }
           const ul = document.createElement('ul');
-          posts.forEach((li) => ul.appendChild(li));
+          posts.forEach((li) => {
+            // Ensure the dash is always present
+            if (!li.textContent?.includes('–')) {
+              const dateText = li.textContent?.split(' – ')[0] || '';
+              const linkText = li.textContent?.split(' – ')[1] || '';
+              li.textContent = `${dateText} – ${linkText}`;
+            }
+            ul.appendChild(li);
+          });
           postsList.appendChild(ul);
         }
 

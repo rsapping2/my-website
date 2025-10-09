@@ -1,6 +1,6 @@
 ---
 title: "Networking in 2025: Steps to build your network"
-pubDate: "2025-07-16"
+pubDate: "2024-07-16"
 description: "Start your network, grow your reach, engage with others, ask for help (the right way), and follow up. Here's how to network your way into a tech role in 2025."
 tags: ["JobSearch", "Networking", "Tips", "Tech", "Careers", "Career", "Advice", "Recruiting"]
 image: "/images/networking.png" 

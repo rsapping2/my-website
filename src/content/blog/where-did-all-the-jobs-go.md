@@ -1,6 +1,6 @@
 ---
 title: "Where did all the jobs go?"
-pubDate: "2025-07-06"
+pubDate: "2024-07-06"
 description: "Quick look at reasons behind the tech job dry ups, driven by economics, AI, and tax changes."
 tags: ["jobs", "AI", "tax"]
 image: "/images/where_are_the_jobs.png" 

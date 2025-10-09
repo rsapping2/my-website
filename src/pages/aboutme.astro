@@ -2,10 +2,234 @@
 import BaseLayout from '../layouts/BaseLayout.astro';
 ---
 
-<BaseLayout>
-  <h1>About Me</h1>
-  <p>About me page content coming soon. </p>
-  <p>For now, please reference my linkedin.com page: www.linkedin.com/in/rsapping
+<BaseLayout 
+  title="About Rob Sapping - Full Stack Developer, Software Engineer, Automation Engineer & DevOps Enthusiast"
+  description="Learn about Rob Sapping's journey in software engineering and DevOps. Experienced professional sharing insights on technology, career development, and industry best practices."
+>
+  <div class="about-container">
+    <div class="about-header">
+      <h1>About Me</h1>
+      <p class="subtitle">Software Engineer & DevOps Enthusiast</p>
+    </div>
 
-</p>
+    <div class="about-content">
+      <section class="intro">
+        <h2>Hello! I'm Rob Sapping</h2>
+        <p>
+          I'm a passionate software engineer with a deep interest in DevOps practices, 
+          infrastructure automation, and helping others navigate the tech industry. 
+          Through this blog, I share practical insights, tutorials, and career advice 
+          based on my experiences in software development and DevOps.
+        </p>
+      </section>
+
+      <section class="expertise">
+        <h2>Areas of Expertise</h2>
+        <div class="skills-grid">
+          <div class="skill-category">
+            <h3>Software Engineering</h3>
+            <ul>
+              <li>Full-stack development</li>
+              <li>API design and development</li>
+              <li>Code review and best practices</li>
+              <li>Testing strategies</li>
+            </ul>
+          </div>
+          
+          <div class="skill-category">
+            <h3>DevOps & Infrastructure</h3>
+            <ul>
+              <li>CI/CD pipeline design</li>
+              <li>Infrastructure as Code (IaC)</li>
+              <li>Container orchestration</li>
+              <li>Cloud platforms (AWS, Azure, GCP)</li>
+              <li>Monitoring and observability</li>
+            </ul>
+          </div>
+          
+          <div class="skill-category">
+            <h3>Quality & Automation (SDET)</h3>
+            <ul>
+              <li>Testing and automation at scale</li>
+              <li>Designing test frameworks</li>
+              <li>CI integration and Playwright/Cypress</li>
+              <li>Strategies for reliable releases</li>
+              <li>Continuous testing practices</li>
+            </ul>
+          </div>
+          
+          <div class="skill-category">
+            <h3>Leading Projects & Teams (PM Perspective)</h3>
+            <ul>
+              <li>Agile execution and roadmap planning</li>
+              <li>Metrics and stakeholder management</li>
+              <li>Driving software delivery through people</li>
+              <li>Individual contributor to program lead transition</li>
+              <li>Process optimization and team leadership</li>
+            </ul>
+          </div>
+          
+          <div class="skill-category">
+            <h3>Career Development</h3>
+            <ul>
+              <li>Technical interview preparation</li>
+              <li>Job search strategies</li>
+              <li>Professional networking</li>
+              <li>Industry trend analysis</li>
+            </ul>
+          </div>
+        </div>
+      </section>
+
+      <section class="mission">
+        <h2>Why I Write</h2>
+        <p>
+          I believe in the power of knowledge sharing and community learning. 
+          This blog serves as both a personal learning journal and a resource 
+          for others navigating similar paths in technology. Whether you're 
+          just starting your career or looking to level up your skills, 
+          I hope you find value in the content I share.
+        </p>
+      </section>
+
+      <section class="connect">
+        <h2>Let's Connect</h2>
+        <p>
+          I'm always interested in connecting with fellow developers, DevOps engineers, 
+          and anyone passionate about technology. Feel free to reach out!
+        </p>
+        
+        <div class="social-links">
+          <a href="https://www.linkedin.com/in/rsapping" target="_blank" rel="noopener noreferrer" class="social-link linkedin">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
+              <path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/>
+            </svg>
+            LinkedIn
+          </a>
+        </div>
+      </section>
+    </div>
+  </div>
+
+  <style>
+    .about-container {
+      max-width: 800px;
+      margin: 0 auto;
+      padding: 2rem 1rem;
+    }
+
+    .about-header {
+      text-align: center;
+      margin-bottom: 3rem;
+    }
+
+    .about-header h1 {
+      font-size: 2.5rem;
+      margin-bottom: 0.5rem;
+      color: #333;
+    }
+
+    .subtitle {
+      font-size: 1.2rem;
+      color: #666;
+      font-style: italic;
+    }
+
+    .about-content section {
+      margin-bottom: 3rem;
+    }
+
+    .about-content h2 {
+      color: #333;
+      border-bottom: 2px solid #007acc;
+      padding-bottom: 0.5rem;
+      margin-bottom: 1.5rem;
+    }
+
+    .about-content p {
+      line-height: 1.6;
+      margin-bottom: 1rem;
+      color: #555;
+    }
+
+    .skills-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 2rem;
+      margin-top: 1.5rem;
+    }
+
+    .skill-category {
+      background: #f8f9fa;
+      padding: 1.5rem;
+      border-radius: 8px;
+      border-left: 4px solid #007acc;
+    }
+
+    .skill-category h3 {
+      margin-top: 0;
+      margin-bottom: 1rem;
+      color: #333;
+    }
+
+    .skill-category ul {
+      list-style: none;
+      padding: 0;
+    }
+
+    .skill-category li {
+      padding: 0.25rem 0;
+      color: #555;
+    }
+
+    .skill-category li:before {
+      content: "✓ ";
+      color: #007acc;
+      font-weight: bold;
+    }
+
+    .social-links {
+      display: flex;
+      gap: 1rem;
+      margin-top: 1rem;
+    }
+
+    .social-link {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.5rem;
+      padding: 0.75rem 1.5rem;
+      background: #007acc;
+      color: white;
+      text-decoration: none;
+      border-radius: 6px;
+      transition: background-color 0.2s ease;
+    }
+
+    .social-link:hover {
+      background: #005a9e;
+    }
+
+    .social-link.email {
+      background: #6c757d;
+    }
+
+    .social-link.email:hover {
+      background: #545b62;
+    }
+
+    @media (max-width: 768px) {
+      .about-header h1 {
+        font-size: 2rem;
+      }
+      
+      .skills-grid {
+        grid-template-columns: 1fr;
+      }
+      
+      .social-links {
+        flex-direction: column;
+      }
+    }
+  </style>
 </BaseLayout>
