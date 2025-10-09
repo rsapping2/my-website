@@ -2,6 +2,7 @@
 import { getCollection, getEntry } from 'astro:content';
 import BaseLayout from '../../layouts/BaseLayout.astro';
 import RelatedPosts from '../../components/RelatedPosts.astro';
+import '../../styles/blog-post.css';
 
 export async function getStaticPaths() {
   const posts = await getCollection('blog');
@@ -55,101 +56,4 @@ const { data } = entry;
     />
   )}
 
-  <style>
-    .tags {
-      margin: 1rem 0;
-    }
-
-    .tag-link {
-      display: inline-block;
-      background: #e8f4fd;
-      color: #007acc;
-      padding: 0.25rem 0.75rem;
-      margin: 0.25rem 0.5rem 0.25rem 0;
-      border-radius: 20px;
-      text-decoration: none;
-      font-size: 0.9rem;
-      font-weight: 500;
-      transition: background-color 0.2s ease;
-    }
-
-    .tag-link:hover {
-      background: #007acc;
-      color: white;
-    }
-
-    /* Table Styles - Direct in blog template */
-    table {
-      width: 100% !important;
-      border-collapse: collapse !important;
-      margin: 1.5rem 0 !important;
-      background: white !important;
-      border-radius: 8px !important;
-      overflow: hidden !important;
-      box-shadow: 0 2px 8px rgba(0,0,0,0.1) !important;
-      border: 2px solid #007acc !important;
-    }
-
-    table th,
-    table td {
-      padding: 12px 16px !important;
-      text-align: left !important;
-      border: 1px solid #e0e0e0 !important;
-      border-right: 1px solid #e0e0e0 !important;
-      border-bottom: 1px solid #e0e0e0 !important;
-    }
-
-    table th {
-      background: #f8f9fa !important;
-      font-weight: 600 !important;
-      color: #2c3e50 !important;
-      border-bottom: 2px solid #007acc !important;
-    }
-
-    table tr:hover {
-      background: #f8f9fa !important;
-    }
-
-    table th:last-child,
-    table td:last-child {
-      border-right: none !important;
-    }
-
-    /* Specific styling for comparison tables */
-    .comparison-table table {
-      width: 100% !important;
-      border-collapse: collapse !important;
-      margin: 1.5rem 0 !important;
-      background: white !important;
-      border-radius: 8px !important;
-      overflow: hidden !important;
-      box-shadow: 0 2px 8px rgba(0,0,0,0.1) !important;
-      border: 2px solid #007acc !important;
-    }
-
-    .comparison-table table th,
-    .comparison-table table td {
-      padding: 12px 16px !important;
-      text-align: left !important;
-      border: 1px solid #e0e0e0 !important;
-      border-right: 1px solid #e0e0e0 !important;
-      border-bottom: 1px solid #e0e0e0 !important;
-    }
-
-    .comparison-table table th {
-      background: #f8f9fa !important;
-      font-weight: 600 !important;
-      color: #2c3e50 !important;
-      border-bottom: 2px solid #007acc !important;
-    }
-
-    .comparison-table table tr:hover {
-      background: #f8f9fa !important;
-    }
-
-    .comparison-table table th:last-child,
-    .comparison-table table td:last-child {
-      border-right: none !important;
-    }
-  </style>
 </BaseLayout>
