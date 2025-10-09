@@ -3,4 +3,5 @@
 dist/*
 .vscode/
 node_modules/.vite/deps/_metadata.json
+node_modules/.vite/deps/_metadata.json
 node_modules

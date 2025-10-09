@@ -1,5 +1,6 @@
 ---
 import BaseLayout from '../layouts/BaseLayout.astro';
+import '../styles/posts.css';
 
 interface Post {
   frontmatter: {
@@ -107,7 +108,15 @@ const allPosts = [...posts].sort(
             return;
           }
           const ul = document.createElement('ul');
-          posts.forEach((li) => ul.appendChild(li));
+          posts.forEach((li) => {
+            // Ensure the dash is always present
+            if (!li.textContent?.includes('–')) {
+              const dateText = li.textContent?.split(' – ')[0] || '';
+              const linkText = li.textContent?.split(' – ')[1] || '';
+              li.textContent = `${dateText} – ${linkText}`;
+            }
+            ul.appendChild(li);
+          });
           postsList.appendChild(ul);
         }
 
@@ -142,35 +151,4 @@ const allPosts = [...posts].sort(
     }
   </script>
 
-  <style>
-    .tabs {
-      margin: 1rem 0;
-    }
-    .tabs button {
-      margin-right: 0.5rem;
-      padding: 0.5rem 1rem;
-      cursor: pointer;
-      background: none;
-      border: 1px solid #ccc;
-      border-radius: 4px;
-      font-size: 1rem;
-      transition: background-color 0.2s ease;
-    }
-    .tabs button.active,
-    .tabs button[aria-selected="true"] {
-      font-weight: bold;
-      border-color: #333;
-      background-color: #eee;
-    }
-    .tabs button:hover:not(.active) {
-      background-color: #f0f0f0;
-    }
-    ul {
-      list-style: none;
-      padding-left: 0;
-    }
-    li {
-      margin-bottom: 0.5rem;
-    }
-  </style>
 </BaseLayout>

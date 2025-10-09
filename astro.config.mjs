@@ -1,5 +1,6 @@
 import { defineConfig } from 'astro/config';
 
 export default defineConfig({
-  // your other config options here
+  site: 'http://rob.tips/',
+  output: 'static'
 });

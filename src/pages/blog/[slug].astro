@@ -1,6 +1,8 @@
 ---
 import { getCollection, getEntry } from 'astro:content';
 import BaseLayout from '../../layouts/BaseLayout.astro';
+import RelatedPosts from '../../components/RelatedPosts.astro';
+import '../../styles/blog-post.css';
 
 export async function getStaticPaths() {
   const posts = await getCollection('blog');
@@ -21,18 +23,37 @@ const { Content } = await entry.render();
 const { data } = entry;
 ---
 
-<BaseLayout>
+<BaseLayout 
+  title={data.title}
+  description={data.description}
+  image={data.image || '/images/default.png'}
+  type="article"
+>
   <article>
     <h1>{data.title}</h1>
     <p><small>{data.pubDate.toLocaleDateString('en-US', { timeZone: 'America/Los_Angeles' })}</small></p>
     <p>{data.description}</p>
 
     {data.tags && (
-      <p><strong>Tags:</strong> {data.tags.join(', ')}</p>
+      <div class="tags">
+        <strong>Tags:</strong>
+        {data.tags.map((tag) => (
+          <a href={`/posts?tag=${encodeURIComponent(tag)}`} class="tag-link">{tag}</a>
+        ))}
+      </div>
     )}
 
     <hr />
 
     <Content />
   </article>
+
+  {data.tags && (
+    <RelatedPosts 
+      currentTags={data.tags} 
+      currentSlug={slug}
+      limit={3}
+    />
+  )}
+
 </BaseLayout>

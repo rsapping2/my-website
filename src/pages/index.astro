@@ -1,5 +1,6 @@
 ---
 import BaseLayout from '../layouts/BaseLayout.astro';
+import '../styles/index.css';
 
 interface PostModule {
   frontmatter: {
@@ -10,12 +11,11 @@ interface PostModule {
   };
 }
 
-//const postImports = import.meta.glob('../../content/blog/*.md', { eager: true });
 const postImports = import.meta.glob('../content/blog/*.md');
 
-console.log("Imports");
+// console.log("Imports");
 
-console.log(Object.keys(postImports));
+// console.log(Object.keys(postImports));
 
 
 const posts = [];
@@ -48,35 +48,29 @@ const latestThree = posts.slice(0, 5);
     {latestThree.length > 0 ? (
       latestThree.map((post) => {
         const imgSrc = post.frontmatter?.image || '/images/default.png';
+        
+        // Check if image exists, fallback to default
+        const imageExists = post.frontmatter?.image && post.frontmatter.image !== '/images/default.png';
+        const finalImgSrc = imageExists ? post.frontmatter.image : '/images/default.png';
 
 
         return (
-            <article style="display: flex; align-items: flex-start; margin-bottom: 3rem; gap: 1rem;">
-            {/* <img
-              src={imgSrc}
-              alt={post.frontmatter.title}
-              width="600"
-              height="200"
-              style="object-fit: cover; border-radius: 8px;"
-            /> */}
+            <article class="post-preview">
             <img
-              src={imgSrc}
-              alt={post.frontmatter.title}
-              style={{
-                width: '225px',
-                height: '150px',
-                objectFit: 'cover',
-                borderRadius: '8px',
-                flexShrink: 0,
-                display: 'block' // optional, for layout consistency
-              }}
+              src={finalImgSrc}
+              alt={`Featured image for ${post.frontmatter.title} - ${post.frontmatter.description}`}
               loading="lazy"
+              decoding="async"
+              onerror="this.src='/images/default.png'"
             />
-            <div>
-              <h2 style="margin: 0;"><a href={post.url}>{post.frontmatter.title}</a></h2>
-              <p><small>{new Date(post.frontmatter.pubDate).toLocaleDateString('en-US', { timeZone: 'America/Los_Angeles' })}</small></p>
-              <p>{post.frontmatter.description}</p>
-              <a href={post.url}>Read more →</a>
+            <div class="post-content">
+              <h2><a href={post.url}>{post.frontmatter.title}</a></h2>
+              <div class="post-meta">
+                <span class="post-date">{new Date(post.frontmatter.pubDate).toLocaleDateString('en-US', { timeZone: 'America/Los_Angeles' })}</span>
+                <span class="reading-time">5 min read</span>
+              </div>
+              <p class="post-description">{post.frontmatter.description}</p>
+              <a href={post.url} class="read-more">Read more →</a>
             </div>
           </article>
         );
@@ -85,5 +79,10 @@ const latestThree = posts.slice(0, 5);
       <p>No posts found.</p>
     )}
   </section>
+
+  <div class="view-more">
+    <a href="/posts" class="view-more-link">View More Posts →</a>
+  </div>
+
 </BaseLayout>
 
