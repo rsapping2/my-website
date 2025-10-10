@@ -1,6 +1,6 @@
 ---
 title: "Why Your Docker Images Are So Big (And How to Fix It)"
-pubDate: "2025-12-19"
+pubDate: "2025-10-10"
 description: "Learn why Docker images become bloated and discover practical techniques to reduce image size by 80% or more. Includes real-world examples and best practices."
 tags: ["docker", "optimization", "devops", "containers", "performance"]
 image: "/images/docker-images-are-too-big.png"
