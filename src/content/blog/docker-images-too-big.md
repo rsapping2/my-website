@@ -85,7 +85,7 @@ Test the build
 docker build -t test-optimized .
 ```
 
-###Compare Sizes
+### Compare Sizes
 ```bash
 docker images | grep test- 
 ```
