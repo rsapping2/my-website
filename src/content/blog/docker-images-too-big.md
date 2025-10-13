@@ -343,7 +343,7 @@ time docker build -t your-app .
 # After:  2m 15s
 ```
 
-## 🚀 **AREAS TO TEST/ADD:**
+## **AREAS TO TEST/ADD:**
 
 1. **Test with your actual application** - Replace the example with your real app
 2. **Add security scanning** - Run `docker scan your-image` after optimization
