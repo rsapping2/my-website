@@ -20,6 +20,24 @@
   color: white;
 }
 
+.read-time {
+  margin: 1rem 0;
+}
+
+.read-time strong {
+  color: #333;
+}
+
+.read-time-value {
+  display: inline-block;
+  background: #e8f4fd;
+  color: #007acc;
+  padding: 0.25rem 0.75rem;
+  border-radius: 20px;
+  font-size: 0.9rem;
+  font-weight: 500;
+}
+
 /* Table Styles - Direct in blog template */
 table {
   width: 100% !important;
@@ -93,4 +111,3 @@ table td:last-child {
 .comparison-table table td:last-child {
   border-right: none !important;
 }
-

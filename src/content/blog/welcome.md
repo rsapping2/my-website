@@ -3,7 +3,8 @@ title: "Welcome to My Software Engineering & DevOps Blog"
 pubDate: "2025-05-26"
 description: "Kickstarting this blog to share knowledge about software engineering, DevOps, and failing my way through it!"
 tags: ["welcome", "introduction","software engineering", "devops" ]
-image: "/images/welcome.png" 
+image: "/images/welcome.png"
+readTime: "2 min read"
 ---
 
 # Welcome to My Software Engineering & DevOps Blog!

@@ -4,6 +4,7 @@ pubDate: "2025-10-10"
 description: "Learn why Docker images become bloated and discover practical techniques to reduce image size by 80% or more. Includes real-world examples and best practices."
 tags: ["docker", "optimization", "devops", "containers", "performance"]
 image: "/images/docker-images-are-too-big.png"
+readTime: "12 min read"
 ---
 
 # Why Your Docker Images Are So Big (And How to Fix It)
@@ -15,7 +16,7 @@ In large scale CI/CD pipelines, bloated images can waste hours of compute time a
 ## The Problem: Bloated Images
 
 ### Common Culprits
-- **Large base images** (Ubuntu: 72MB → Alpine: 5MB)
+- **Large base images** 
 - **Unnecessary packages** and dependencies
 - **Build artifacts** left in final image
 - **Multiple layers** with redundant data
@@ -29,126 +30,369 @@ In large scale CI/CD pipelines, bloated images can waste hours of compute time a
 
 ## Before and After: A Real Example
 
-For the example below, I used an app.py file, which is just a print statement.
+For the example below, I used an app.py file that demonstrates a real Flask web application with dependencies.
 
-```python
-print("Hello world")
+Step 1: Create a folder
+```
+mkdir docker-tests
 ```
 
+Step 2: In the folder, create an app.py file.
+
+[app.py]
+```python
+from flask import Flask, jsonify
+import requests
+import json
+from datetime import datetime
+
+app = Flask(__name__)
+
+@app.route('/')
+def home():
+    return jsonify({
+        "message": "Hello from Docker!",
+        "timestamp": datetime.now().isoformat(),
+        "status": "running"
+    })
+
+@app.route('/health')
+def health():
+    return jsonify({"status": "healthy"})
+
+@app.route('/external')
+def external():
+    try:
+        response = requests.get('https://httpbin.org/json', timeout=5)
+        return jsonify({
+            "external_data": response.json(),
+            "status": "success"
+        })
+    except Exception as e:
+        return jsonify({"error": str(e), "status": "failed"}), 500
+
+if __name__ == '__main__':
+    app.run(host='0.0.0.0', port=5000, debug=False)
+```
+
+
+Step 3. Create a requirements.txt file
+```
+flask==2.3.3
+requests==2.31.0
+numpy==1.24.3
+pandas==2.0.3
+```
+Note: NumPy and Pandas are installed for demonstration purposes only and aren’t used in app.py.
+
+---
 ### The Bloated Version
 
-Create a folder
-```
-mkdir docker-bloated
-```
-Add the app.py file to it.
+Step 4: Create a dockerfile
 
-Create a dockerfile
+Dockerfile.bloated
 ```dockerfile
-# ❌ BAD: Bloated image (2.1GB)
+# ❌ BAD: Bloated image (931MB)
 FROM ubuntu:20.04
 RUN apt-get update
 RUN apt-get install -y python3 python3-pip
 RUN pip3 install flask requests numpy pandas
 COPY . /app
 WORKDIR /app
-RUN python3 app.py
+EXPOSE 5000
+CMD ["python3", "app.py"]
 ```
 
-Test the build
+Step 5: Build the Image
 ```
-docker build -t test-bloated .
+docker build -t ubuntu-bloated -f Dockerfile.bloated .
 ```
 
-### The Optimized Version
+---
 
-Create a folder
-```
-mkdir docker-optimized
-```
-Add the app.py file to it.
+### The Optimized Version of Ubuntu
 
-Create a dockerfile
+Step 6: Create a dockerfile
+
+Dockerfile.optimized
 ```dockerfile
-# ✅ GOOD: Optimized image (45MB)
-FROM python:3.9-alpine
-RUN apk add --no-cache --virtual .build-deps gcc musl-dev
-RUN pip install --no-cache-dir flask requests
-RUN apk del .build-deps
+FROM ubuntu:20.04 AS builder
+RUN apt-get update && \
+    apt-get install -y --no-install-recommends python3 python3-pip && \
+    apt-get clean && \
+    rm -rf /var/lib/apt/lists/*
+COPY requirements.txt .
+RUN pip3 install --no-cache-dir --user -r requirements.txt
+
+FROM ubuntu:20.04
+RUN apt-get update && \
+    apt-get install -y --no-install-recommends python3 && \
+    apt-get clean && \
+    rm -rf /var/lib/apt/lists/* && \
+    useradd -m appuser
+COPY --from=builder /root/.local /home/appuser/.local
 COPY . /app
 WORKDIR /app
+RUN chown -R appuser:appuser /app
+USER appuser
+EXPOSE 5000
+CMD ["python3", "app.py"]
+```
+
+
+Step 7: Build the Image
+```
+docker build -t ubuntu-optimized -f Dockerfile.optimized .
+```
+
+---
+
+### The Slim Build
+
+Step 8: Create a dockerfile
+
+Dockerfile.slim
+```dockerfile
+FROM python:3.9-slim AS builder
+COPY requirements.txt .
+RUN pip install --no-cache-dir --user -r requirements.txt
+
+FROM python:3.9-slim
+COPY --from=builder /root/.local /root/.local
+COPY . /app
+WORKDIR /app
+RUN useradd -m appuser && chown -R appuser:appuser /app
+USER appuser
+EXPOSE 5000
 CMD ["python", "app.py"]
 ```
 
-Test the build
+Step 9: Build the Image
 ```
-docker build -t test-optimized .
+docker build -t slim-optimized -f Dockerfile.slim .
+```
+---
+### The Alpine Build (with compatibility issues)
+
+Step 10: Create the docker file
+
+Dockerfile.alpine
+```dockerfile
+# Alpine - smallest but compatibility issues
+FROM python:3.9-alpine
+COPY requirements.txt .
+RUN apk add --no-cache --virtual .build-deps gcc musl-dev && \
+    pip install --no-cache-dir -r requirements.txt && \
+    apk del .build-deps
+COPY . /app
+WORKDIR /app
+EXPOSE 5000
+CMD ["python", "app.py"]
 ```
 
-### Compare Sizes
-```bash
-docker images | grep test- 
+Step 11: Build the Image
 ```
-Results
-```bash
-test-optimized     latest    b42aa86a2ad4   About a minute ago   338MB
-test-bloated       latest    c1d0bd88f0ab   9 minutes ago        931MB
+docker build -t alpine-optimized -f Dockerfile.alpine .
 ```
+---
 
-**Result: At least 63.7% size reduction!**
+## Results
 
-You can also compare the intial base images, which is still about a 29.5% reduction.
+Lets first look at the base imaaages and then current image sizes.
 
+#### Base images
 ```bash
 docker pull ubuntu:20.04
 docker images ubuntu:20.04
 # Size: ~109MB
 
+docker pull python:3.9-slim
+docker images python:3.9-slim
+# Size: ~194MB
+
 docker pull python:3.9-alpine
 docker images python:3.9-alpine
-# Size: ~76.8MB
+# Size: ~79.7MB
 ```
+
+#### Build Image sizes
+Get the sizes
+```bash
+docker images | grep -E "(ubuntu-bloated|slim-optimized|ubuntu-optimized|alpine-optimized)"
+```
+Image sizes
+```bash
+ubuntu-bloated     latest    99cfce6b34ff   14 minutes ago       931MB
+ubuntu-optimized   latest    186773c0ac9a   19 minutes ago       168MB
+alpine-optimized   latest    b13738bb780d   About a minute ago   101MB
+slim-optimized     latest    cbcd80d00465   13 minutes ago       215MB
+```
+
+Interesting.. Alpine appears the smallest from this output, and Ubuntu optimized is the next smallest. Let's explore more. Let's look at the base images before we optimize.
+
+
+Did alpine win? Not exactly. For size, yes, for functionality, no. 
+
+Alpine is to be used with caution
+- Smallest final image (101MB).
+- Uses musl libc instead of glibc → can break some Python packages (DNS quirks, memory allocation issues, some C extensions).
+- Alpine works best for statically compiled languages, dynamic languages with C extensions (Python, Ruby) can run into subtle runtime issues.
+- Fine if you know your dependencies work cleanly with musl, but more fragile in production.
+
+**So is it ubuntu optimized or slim as the winner?**
+
+Why choose Ubuntu-optimized over Slim?
+- Its not as clear cut as you would hope, it "depends". 
+- Let's see why Slim exists and why Ubuntu beats slim in our example.
+
+Why slim exists
+- Slim images are stripped-down Python images with fewer extra packages and libraries.
+- Intended to reduce image size compared to the full python:X.X image.
+- Great if you know exactly what dependencies you need and can install them without adding too many extras.
+
+Why Ubuntu-optimized beats slim in ourr example
+- You almost always need system libraries, compilers, or dev tools for Python packages like numpy, pandas, or anything with C extensions.
+- Installing those on slim adds layers and increases size.
+- In some Python apps with C extension dependencies, Ubuntu optimized can be smaller than Python slim due to required build dependencies.
+- Do not pick slim just because it “sounds smaller”. For Python, Ubuntu-optimized can often be smaller, as safe, and easier to maintain.
+- Slim can still be useful for simple Python apps with pure Python dependencies, but for most production apps, Ubuntu wins.
+
+When to pick Slim over ubuntu?
+- Pick Ubuntu-optimized for Python unless you have a strict requirement for the absolute smallest image and have tested all dependencies on slim.
+- Slim is better for experienced teams who can manage missing libraries and want slightly smaller builds (sometimes smaller than Ubuntu in very minimal cases).
+
+#### The winner? 
+- For our example, **Ubuntu-optimized.** 
+
+---
+
+## Python Base Image Decision Matrix
+
+| Image | Size (with dependencies) | Compatibility | Security | Debugging | Use Case | Overall Rating | Reason |
+|-------|------|---------------|----------|-----------|----------|----------------|---------|
+| Ubuntu | 900MB+  | Excellent | Poor | Easy | Development | ⭐⭐ (Easiest) | Too large for production |
+| Ubuntu Optimized | ~168MB | Excellent | Good | Easy | **Production** | ⭐⭐⭐⭐⭐ (Best overall) | Best balance of compatibility, debugging, stability |
+| Alpine Optimized | ~101MB | Poor | Good | Hard | Simple apps only | ⭐⭐ (Size over compatibility) | Compatibility issues with C extensions |
+| Python Slim Optimized| ~215MB | Excellent | Good | Easy | **Production** | ⭐⭐⭐⭐ (Good alternative) | Good for pure Python apps |
+| distroless/python3 Optimized  | ~93.8MB | Good* | Excellent | Hard | Security-critical | ⭐⭐⭐⭐ (Security-focused) | Excellent security, limited flexibility |
+
+*Supports only pre-installed Python runtime and pure Python dependencies; installing additional packages is difficult.
+
+
+### **Recommendation for python applications:** 
+- Use ubuntu:20.04 optimized for Python apps with C-extension dependencies.
+- **Pros:**
+    - Excellent compatibility with Python packages like numpy, pandas, and scipy
+    - Easier debugging with full shell and package manager access
+    - Predictable and stable build environment for production
+- **Cons:**
+    - Larger attack surface compared to slim or distroless images
+    - Requires installing Python and dependencies manually
+
+### Close Runner-Up: python:3.9-slim
+- **Pros:** Minimal attack surface, small size, no shell/package manager
+- **Cons:** Hard to debug, no shell access, limited to pure Python apps
+
+### Close Runner-Up: python:3.9-slim
+- **Pros:** Minimal attack surface, small size, no shell/package manager
+- **Cons:** Hard to debug, no shell access, limited to pure Python apps
+
+
+### Takeaway
+
+For Python applications that rely on system libraries or heavy C-extension packages like numpy, pandas, or scipy, Ubuntu-optimized is often the better choice. It provides a stable, predictable environment with full shell access, easier debugging, and the flexibility to install exactly what your application needs. In many cases, the final image size can even be smaller than Python slim, because you avoid pulling in extra build dependencies that slim requires for C extensions.
+
+That said, Python slim remains a strong alternative for applications that are mostly pure Python. It offers a minimal attack surface, a smaller base, and fewer moving parts, making it ideal for lightweight apps where full system libraries aren’t needed. Choosing slim is especially valuable when security and minimal runtime footprint are top priorities, or when you want to enforce a strict “pure Python only” environment.
+
+**Rule of Thumb:**
+- Ubuntu-optimized: Use for complex Python apps with compiled dependencies.
+- Python slim: Use for lightweight, pure-Python apps where minimal attack surface and small image size matter most.
+
+
 
 ## 7 Techniques to Shrink Your Images
 
 ### 1. Choose the Right Base Image
 
-Why it matters: Choosing a smaller base image matters because it reduces your image size, attack surface, and build time.
+Why it matters: Choosing a smaller base image helps reduce your image size, attack surface, and build time. However, make sure the image is compatible with your use case, and consider its installation dependencies, sometimes a slightly larger image may be more optimal depending on the libraries and tools your application needs.
 
-**❌ Avoid:**
+Looking at just raw base images:
+
+**Large Base Images:**
 ```dockerfile
 FROM ubuntu:20.04  # 72MB
 FROM node:16        # 900MB
 FROM python:3.9    # 900MB
 ```
 
-**✅ Use:**
+**Alternatives:**
 ```dockerfile
 FROM alpine:3.15    # 5MB
 FROM node:16-alpine # 120MB
-FROM python:3.9-alpine # 45MB
+FROM python:3.9-slim # ~194MB (better Python compatibility)
 ```
+
+The best approach is to test which images successfully build, ensure all dependencies work, and choose one that minimizes both image bloat and attack surface.
+
+** Python + Alpine Warning:**
+While Alpine images are smaller, they use musl libc instead of glibc, which can cause compatibility issues with Python packages containing C extensions. Many popular packages (numpy, pandas, scipy, etc.) may fail to install or run properly.
+
 
 ### 2. Multi-Stage Builds
 
-Why it matterrs: Multi-stage builds let you separate build-time dependencies (compilers, dev tools) from runtime dependencies, drastically reducing image size and attack surface. 
+Why it matters: Multi-stage builds let you separate build-time dependencies (compilers, dev tools) from runtime dependencies, drastically reducing image size and attack surface. I can also use distroless while using multi-stage builds.
 
+**Single stage build**
 ```dockerfile
-
-# Build stage
-FROM node:16-alpine AS builder
+# Single-stage build
+FROM ubuntu:20.04
+RUN apt-get update && \
+    apt-get install -y --no-install-recommends python3 python3-pip && \
+    apt-get clean && \
+    rm -rf /var/lib/apt/lists/*
+COPY requirements.txt .
+RUN pip3 install --no-cache-dir -r requirements.txt
+COPY . /app
 WORKDIR /app
-COPY package*.json ./
-RUN npm ci --only=production
-
-# Production stage
-FROM node:16-alpine
-WORKDIR /app
-COPY --from=builder /app/node_modules ./node_modules
-COPY . .
-EXPOSE 3000
-CMD ["node", "app.js"]
+RUN useradd -m appuser && chown -R appuser:appuser /app
+USER appuser
+EXPOSE 5000
+CMD ["python3", "app.py"]
 ```
+
+**Multi-stage**
+```dockerfile
+FROM ubuntu:20.04 AS builder
+RUN apt-get update && \
+    apt-get install -y --no-install-recommends python3 python3-pip gcc && \
+    apt-get clean && \
+    rm -rf /var/lib/apt/lists/*
+COPY requirements.txt .
+RUN pip3 install --no-cache-dir --user -r requirements.txt
+
+# Production stage - Distroless for minimal attack surface
+FROM gcr.io/distroless/python3
+COPY --from=builder /root/.local /root/.local
+COPY . /app
+WORKDIR /app
+CMD ["app.py"]
+```
+
+### What Changed and Why
+
+**Before (Single stage):** All dependencies installed in one stage, including build tools and package managers that aren't needed at runtime.
+
+**After (Multi-stage):** 
+- **Build stage:** Installs Python, pip, and all dependencies
+- **Production stage:** Only installs Python runtime and copies the built dependencies
+- **Result:** Smaller final image with no build tools or package managers
+
+**Key Benefits:**
+- **Security:** No build tools in final image
+- **Size:** Removes unnecessary build dependencies
+- **Maintenance:** Cleaner separation of concerns
+- **Debugging:** Easier to troubleshoot build vs runtime issues
+
 
 ### 3. Combine RUN Commands
 
@@ -175,6 +419,7 @@ RUN apt-get update && \
 
 Why it matters: It prevents unnecessary files from being included in the build context, reducing image size and speeding up builds.
 
+Example of .dockerignore for a project
 ```dockerignore
 node_modules
 npm-debug.log
@@ -202,7 +447,7 @@ RUN apk del py3-pip
 
 ### 6. Copy Only What You Need
 
-Why it mattters: It keeps the image smaller, avoids including sensitive or unnecessary files, and improves Docker layer caching efficiency for faster builds.
+Why it matters: It keeps the image smaller, avoids including sensitive or unnecessary files, and improves Docker layer caching efficiency for faster builds.
 
 ```dockerfile
 # Copy only necessary files
@@ -216,22 +461,35 @@ COPY src/ ./src/
 Why it matters:  Distroless images contain only your application and its runtime dependencies. Meaning no package manager, shell, or OS libraries. That results in a smaller size and fewer vulnerabilities. 
 
 ```dockerfile
-# For Go applications
-FROM gcr.io/distroless/base-debian10
-COPY app /app
-CMD ["/app"]
+# Build stage - MUST use a full image with build tools
+FROM ubuntu:20.04 AS builder
+RUN apt-get update && \
+    apt-get install -y --no-install-recommends python3 python3-pip gcc && \
+    apt-get clean && \
+    rm -rf /var/lib/apt/lists/*
+COPY requirements.txt .
+RUN pip3 install --no-cache-dir --user -r requirements.txt
+
+# Production stage - Distroless for minimal attack surface
+FROM gcr.io/distroless/python3
+COPY --from=builder /root/.local /root/.local
+COPY . /app
+WORKDIR /app
+CMD ["app.py"]
 ```
+
+Note: Distroless images cannot be used in build stages because they contain no package managers, shells, or build tools, only the minimal runtime needed to execute your application. You must use a full base image (like Ubuntu or Python slim) in the build stage to install dependencies, then copy the built application to a distroless runtime image for maximum security.
 
 ## Advanced Optimization Techniques
 
 ### Layer Caching Optimization
 
-Why it matters: Copy only dependency files first (package.json/package-lock.json) to maximize Docker cache efficiency.
+Why it matters: Copy only dependency files first (requirements.txt) to maximize Docker cache efficiency.
 
 ```dockerfile
 # Order matters for caching
-COPY package.json package-lock.json ./
-RUN npm ci --only=production
+COPY requirements.txt .
+RUN pip install --no-cache-dir -r requirements.txt
 COPY . .
 ```
 
@@ -251,7 +509,7 @@ Why it matters: Allows optional installation of dev tools without bloating the p
 ```dockerfile
 ARG INSTALL_DEV_TOOLS=false
 RUN if [ "$INSTALL_DEV_TOOLS" = "true" ]; then \
-        apt-get install -y vim git; \
+        apt-get install -y gcc g++ make vim git; \
     fi
 ```
 
@@ -261,7 +519,7 @@ Why it matters: Health checks help orchestration tools (like Kubernetes/ECS) aut
 
 ```dockerfile
 HEALTHCHECK --interval=30s --timeout=3s --start-period=5s --retries=3 \
-    CMD curl -f http://localhost:3000/health || exit 1
+    CMD python -c "import requests; requests.get('http://localhost:5000/health')" || exit 1
 ```
 
 ## Tools to Analyze Your Images
@@ -305,7 +563,7 @@ docker run -it --rm \
 
 ## Best Practices Checklist
 
-- [ ] Use Alpine or distroless base images
+- [ ] Use the right image for the job
 - [ ] Implement multi-stage builds
 - [ ] Combine RUN commands
 - [ ] Use .dockerignore file

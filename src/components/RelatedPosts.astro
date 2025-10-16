@@ -54,7 +54,7 @@ if (relatedPosts.length < limit) {
                   timeZone: 'America/Los_Angeles' 
                 })}
               </span>
-              <span class="related-post-read-time">5 min read</span>
+              <span class="related-post-read-time">{post.data.readTime || "5 min read"}</span>
             </p>
             <p class="related-post-description">{post.data.description}</p>
             {post.data.tags && (

@@ -43,6 +43,12 @@ const { data } = entry;
       </div>
     )}
 
+    {data.readTime && (
+      <div class="read-time">
+        <strong>Read time:</strong> <span class="read-time-value">{data.readTime}</span>
+      </div>
+    )}
+
     <hr />
 
     <Content />

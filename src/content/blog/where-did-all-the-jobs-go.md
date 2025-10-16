@@ -3,7 +3,8 @@ title: "Where did all the jobs go?"
 pubDate: "2025-07-06"
 description: "Quick look at reasons behind the tech job dry ups, driven by economics, AI, and tax changes."
 tags: ["jobs", "AI", "tax"]
-image: "/images/where_are_the_jobs.png" 
+image: "/images/where_are_the_jobs.png"
+readTime: "4 min read"
 ---
 
 The tech job market has dried up faster than rain on a hot summer day. The days before and during COVID are long in the past now. It’s like looking back at an oasis that slowly disappeared, making you wonder if it was ever really there. So what exactly happened? Was it all just a mirage, or did the days of recruiters flooding your LinkedIn inbox simply dry up forever? What the hell happened?

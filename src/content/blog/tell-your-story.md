@@ -3,7 +3,8 @@ title: "How Telling Your Tech Story Can Help You Stand Out"
 pubDate: "2025-07-17"
 description: "How framing your experience as a story helps build trust, show value, and connect with potential employers."
 tags: ["JobSearch", "Networking", "Tips", "Tech", "Careers", "StoryTelling", "Story", "Advice", "PersosnalBranding", "JobHuntStrategy"]
-image: "/images/what_is_your_story.png" 
+image: "/images/what_is_your_story.png"
+readTime: "3 min read"
 ---
 
 ### Tell your story
