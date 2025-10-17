@@ -92,7 +92,6 @@ Step 4: Create a dockerfile
 
 Dockerfile.bloated
 ```dockerfile
-# ❌ BAD: Bloated image (931MB)
 FROM ubuntu:20.04
 RUN apt-get update
 RUN apt-get install -y python3 python3-pip
@@ -145,7 +144,6 @@ Step 8: Create a dockerfile
 
 Dockerfile.slim
 ```dockerfile
-# ✅ GOOD: Slim image (194MB)
 FROM python:3.9-slim
 COPY requirements.txt .
 RUN pip install --no-cache-dir -r requirements.txt
@@ -245,7 +243,8 @@ Note: Size includes with dependencies
 
 ### **Recommendation for python applications:** 
 - Use ubuntu:20.04 optimized for Python apps with C-extension dependencies.
-- **Pros:**
+- **Pros:**Great for simple apps, limited C extension support
+
   - Full compatibility with numpy, pandas, scipy
   - Easy debugging with shell access
   - Stable, predictable environment

@@ -61,7 +61,7 @@ By the end of this series, you'll be able to:
 - **Avoid common mistakes** that bloat your images
 
 
-## 🔗 Additional Resources
+## Additional Resources
 
 - [Docker Best Practices](https://docs.docker.com/develop/dev-best-practices/)
 - [Alpine Linux Packages](https://pkgs.alpinelinux.org/packages)

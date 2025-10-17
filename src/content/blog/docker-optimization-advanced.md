@@ -13,7 +13,7 @@ Building on our [7 essential techniques](/blog/docker-optimization-techniques), 
 
 ## Advanced Optimization Techniques
 
-### Layer Caching Optimization
+### 1. Layer Caching Optimization
 
 Why it matters: Copy only dependency files first (requirements.txt) to maximize Docker cache efficiency.
 
@@ -26,7 +26,7 @@ COPY . .
 
 **Pro Tip:** Docker caches layers based on the content of files being copied. By copying dependency files first, you ensure that dependency installation only runs when dependencies change, not when your application code changes.
 
-### Enable BuildKit for Faster Builds
+### 2. Enable BuildKit for Faster Builds
 
 Why it matters: You can enable BuildKit to get better caching, parallel builds, and smaller final layers.
 
@@ -41,7 +41,7 @@ DOCKER_BUILDKIT=1 docker build -t your-app .
 - **Smaller layers:** Automatic layer optimization
 - **Faster builds:** Up to 50% faster build times
 
-### Build Arguments for Conditional Installs
+### 3. Build Arguments for Conditional Installs
 
 Why it matters: Allows optional installation of dev tools without bloating the production image.
 
@@ -61,7 +61,7 @@ docker build --build-arg INSTALL_DEV_TOOLS=true -t myapp:dev .
 docker build -t myapp:prod .
 ```
 
-### Health Checks
+### 4. Health Checks
 
 Why it matters: Health checks help orchestration tools (like Kubernetes/ECS) automatically restart unhealthy containers.
 
@@ -79,6 +79,16 @@ HEALTHCHECK --interval=30s --timeout=3s --start-period=5s --retries=3 \
 ## Tools to Analyze Your Images
 
 ### 1. Docker History
+
+First ensure you have something built
+
+# Build images
+```bash
+docker build -t my-app .
+docker build -t demo-app:latest .
+```
+
+# Check history of an image
 
 This command shows all the layers in a Docker image, including the commands that created them and their sizes. This helps identify which layers are largest and where you can optimize your Dockerfile.
 
