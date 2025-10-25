@@ -65,7 +65,7 @@ One of the largest and most popular remote job boards, focusing primarily on tec
 
 ### [7. Remote OK](https://remoteok.com)
 **Category:** Remote and Flexible Work  
-A highly tailored to remote jobs featuring tech, marketing, and support roles with filters and salary estimates. It's worth noting that I had issues signing up. The Outlook email I had used successfully for other accounts was flagged as "bounced," and I was asked to use a different email. While attempting to do so, each username I tried became unavailable, which made the process even more frustrating.  
+Tailored to remote tech jobs, marketing, and support roles with filters and salary estimates. It's worth noting that I had issues signing up.  
   
 **Pro:** Keep updated includes salary data.  
 **Con:** Some listings may be freelance or contract only, which isn’t ideal for all.  
