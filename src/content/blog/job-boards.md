@@ -385,7 +385,7 @@ Community and jobs for space, aerospace, and related industries.
 
 ---
 
-### [80,000 Hours](https://80000hours.org/jobs/)
+### [80,000 Hours](https://80000hours.org/jobs/)git 
 **Category:** Niche and Specialized Boards  
 Mission-driven job board focused on high-impact careers.
 
@@ -400,4 +400,3 @@ Environmentally focused career board for sustainability and green jobs.
 ### [ClearanceJobs](https://www.clearancejobs.com/)
 **Category:** Niche and Specialized Boards  
 Security clearance-required positions for defense and government contracting.
-
