@@ -45,16 +45,7 @@ Known for its company reviews and salary transparency, Glassdoor also has extens
 
 ---
 
-### [5. The Muse](https://www.themuse.com/jobs)
-**Category:** Popular / Career Development  
-A career platform emphasizing company culture and career growth, offering job listings with detailed employer profiles, photos, and videos. Popular among mid career professionals in tech, marketing, and management.  
-  
-**Pro:** Excellent for researching company culture and finding mission aligned workplaces.  
-**Con:** Smaller selection of tech heavy roles compared to placecs like like LinkedIn or Indeed.  
-
----
-
-### [6. We Work Remotely](https://weworkremotely.com)  
+### [5. We Work Remotely](https://weworkremotely.com)  
 **Category:** Remote and Flexible Work  
 One of the largest and most popular remote job boards, focusing primarily on tech, design, and marketing roles. You can also sync WWR to your LinkedIn profile.  
   
@@ -63,7 +54,7 @@ One of the largest and most popular remote job boards, focusing primarily on tec
 
 ---
 
-### [7. Remote OK](https://remoteok.com)
+### [6. Remote OK](https://remoteok.com)
 **Category:** Remote and Flexible Work  
 Tailored to remote tech jobs, marketing, and support roles with filters and salary estimates. It's worth noting that I had issues signing up.  
   
@@ -72,7 +63,7 @@ Tailored to remote tech jobs, marketing, and support roles with filters and sala
 
 ---
 
-### [8. Dice](https://www.dice.com)
+### [7. Dice](https://www.dice.com)
 **Category:** Tech & IT  
 Tech focused board mostly targeting IT professionals and developers in the U.S., including cybersecurity and data science roles.  
   
@@ -81,7 +72,7 @@ Tech focused board mostly targeting IT professionals and developers in the U.S.,
 
 ---
 
-### [9. Built In](https://builtin.com)
+### [8. Built In](https://builtin.com)
 **Category:** Start up and Tech  
 Focused on tech jobs in major U.S. cities like NYC, Chicago, and other major cities. Includes engineering, product, and project management roles.  
   
@@ -90,15 +81,24 @@ Focused on tech jobs in major U.S. cities like NYC, Chicago, and other major cit
 
 ---
 
-### [10. SimplyHired](https://www.simplyhired.com)
+### [9. SimplyHired](https://www.simplyhired.com)
 **Category:** Popular / General  
 A comprehensive job search engine that aggregates listings from multiple sources across industries, including tech, remote, and general business roles. Provides salary estimates and simple application options directly through the platform.  
   
 **Pro:** Huge job database pulling from multiple sources; easy to use interface and salary insights.  
 **Con:** Can include outdated listings. Includes other jobs that are not tech focused.
 
+---
+
+### [10. The Muse](https://www.themuse.com/jobs)
+**Category:** Popular / Career Development  
+A career platform emphasizing company culture and career growth, offering job listings with detailed employer profiles, photos, and videos. Popular among mid career professionals in tech, marketing, and management.  
+  
+**Pro:** Excellent for researching company culture and finding mission aligned workplaces.  
+**Con:** Smaller selection of tech heavy roles compared to placecs like like LinkedIn or Indeed.  
 
 ---
+
 #### Ranked 1–10 Explained
 
 The platforms above are ranked in the order I personally found them most helpful. This ranking reflects a combination of factors including: how easy each site was to navigate, the quality and relevance of the job listings I found, how widely each platform is used within my professional network, and reviews and/or feedback I've come across from others. While traffic and job volume are important, my focus was on the actual user experience and usefulness when actively searching for remote and tech related roles, for myself.  
