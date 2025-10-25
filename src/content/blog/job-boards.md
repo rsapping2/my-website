@@ -107,294 +107,91 @@ For the job boards listed below, I briefly looked at them, but didn't sign up fo
 
 # Others Worth Mentioning
 
-### [A16z](https://jobs.a16z.com/jobs)
-**Category:** Startup and Tech  
-Andreessen Horowitz’s curated board of portfolio company jobs in the startup ecosystem.
+## Startup and Tech
+
+- [A16z](https://jobs.a16z.com/jobs) — Andreessen Horowitz’s curated board of portfolio company jobs in the startup ecosystem.  
+- [AngelList (WellFound)](https://wellfound.com/) — Platform connecting startups with talent, investors, and co-founders.  
+- [Venture Loop](https://www.ventureloop.com/) — Jobs from venture-backed companies and startups.  
+- [Y Combinator](https://www.ycombinator.com/jobs) — Startup accelerator featuring open roles across its portfolio.  
+- [Arc.dev](https://arc.dev/) — Developer-focused job board connecting engineers with startup and remote positions.
 
 ---
 
-### [AI Jobs](https://www.aijobs.com/)
-**Category:** Niche and Specialized Boards  
-Focused on roles in artificial intelligence, ML, and data science.
+## Niche and Specialized Boards
+
+- [AI Jobs](https://www.aijobs.com/) — Focused on AI, ML, and data science roles.  
+- [JS Remotely](https://jsremotely.com/) — Remote JavaScript and front-end developer jobs.  
+- [Outreach AI](https://outreach.ai/jobs) — AI-focused opportunities and emerging tech startups.  
+- [Remote100K](https://remote100k.com/) — Remote tech jobs with six-figure potential.  
+- [SEOJobs](https://seojobs.com/) — SEO, content marketing, and growth-focused roles.  
+- [Space Crew](https://spacecrew.com/) — Jobs in space, aerospace, and related industries.  
+- [80,000 Hours](https://80000hours.org/jobs/) — Mission-driven board for high-impact careers.  
+- [GreenJobSearch.org](https://www.greenjobsearch.org/) — Sustainability and green jobs.  
+- [ClearanceJobs](https://www.clearancejobs.com/) — Roles requiring security clearance in defense/government.
 
 ---
 
-### [AngelList (WellFound)](https://wellfound.com/)
-**Category:** Startup and Tech  
-A leading platform connecting startups with talent, investors, and co-founders.
+## Tech and IT
+
+- [HackerRank Jobs](https://www.hackerrank.com/jobs) — Tech hiring through coding assessments.  
+- [Stack Overflow Jobs](https://stackoverflow.com/jobs) — High-quality software engineering and development roles.  
+- [TechCareers](https://www.techcareers.com/) — Dedicated IT and tech professional job board.
 
 ---
 
-### [Creativefuego](https://creativefuego.com/jobs)
-**Category:** Creative and Design  
-Curated creative jobs across design, marketing, and branding fields.
+## Remote and Flexible Work
+
+- [EU Remote Jobs](https://euremotejobs.com/) — Remote roles across Europe.  
+- [FlexJobs](https://www.flexjobs.com/) — Paid, vetted listings for remote and hybrid work.  
+- [Jobspresso](https://jobspresso.co/) — Curated remote jobs in tech, marketing, and customer support.  
+- [NoDesk](https://nodesk.co/remote-jobs/) — Remote-first company listings and culture insights.  
+- [Pangian](https://pangian.com/) — Global remote work community.  
+- [RemoteCircles](https://remotecircles.com/) — Curated remote job and networking hub.  
+- [Remote Habits](https://remotehabits.com/jobs/) — Profiles and opportunities for remote professionals.  
+- [Remote Hub](https://remotehub.com/) — Freelance and full-time remote listings.  
+- [RemoteRocketship](https://remoterocketship.com/) — Curated remote jobs at vetted startups.  
+- [Remote Women](https://remotewomen.com/) — Promotes gender diversity in remote work.  
+- [Remote.co](https://remote.co/) — Comprehensive resource for remote companies and job seekers.  
+- [Remote4Me](https://remote4me.com/) — Remote tech and customer support jobs.  
+- [Remotive](https://remotive.com/) — Remote job community with global postings.  
+- [Skip The Drive](https://www.skipthedrive.com/) — Telecommuting jobs across industries.  
+- [TryRemotely](https://tryremotely.com/) — Curated remote-friendly roles.  
+- [Virtual Vocations](https://www.virtualvocations.com/) — Subscription-based telecommuting job site.  
+- [Working Nomads](https://www.workingnomads.com/) — Aggregated remote job listings.  
+- [DailyRemote](https://dailyremote.com/) — Daily curated feed of remote openings.  
+- [Just Remote](https://justremote.co/) — Remote jobs with salary filters and team indicators.
 
 ---
 
-### [Crunchboard (TechCrunch)](https://www.crunchboard.com/)
-**Category:** Tech and Startup  
-Job listings from TechCrunch’s tech-savvy readership and startup community.
+## Freelance and Gig
+
+- [Freelancer](https://www.freelancer.com/) — Marketplace for short-term and project-based work.  
+- [Upwork](https://www.upwork.com/) — Global freelancing platform for long and short projects.  
+- [Hubstaff Talent](https://talent.hubstaff.com/) — Free resource to find remote freelancers.  
+- [Toptal](https://www.toptal.com/) — Exclusive network for top freelancers.  
+- [Contra](https://contra.com/) — Commission-free platform for independents.
 
 ---
 
-### [EU Remote Jobs](https://euremotejobs.com/)
-**Category:** Remote and Flexible Work  
-Remote-friendly roles targeting professionals living in or near Europe.
+## Creative and Design
+
+- [Creativefuego](https://creativefuego.com/jobs) — Curated creative jobs in design, marketing, and branding.
 
 ---
 
-### [FlexJobs](https://www.flexjobs.com/)
-**Category:** Remote and Flexible Work  
-Paid, vetted job listings focusing on remote, hybrid, and flexible work.
+## HR Tech and SaaS
+
+- [Greenhouse Jobs](https://www.greenhouse.io/) — Job postings from companies using Greenhouse ATS.
 
 ---
 
-### [Freelancer](https://www.freelancer.com/)
-**Category:** Freelance and Gig  
-Marketplace for freelancers offering short-term and project-based work.
+## Meta Search / Aggregator
+
+- [JobBoardSearch](https://jobboardsearch.com/) — Indexes hundreds of niche and general job boards.  
+- [Jobright](https://jobright.ai) — AI-powered job search that scrapes and filters remote tech listings.
 
 ---
 
-### [Greenhouse Jobs](https://www.greenhouse.io/)
-**Category:** HR Tech and SaaS  
-Used by companies for applicant tracking and posting job openings.
+## Popular General Boards
 
----
-
-### [HackerRank Jobs](https://www.hackerrank.com/jobs)
-**Category:** Tech and IT  
-Coding assessment platform with tech hiring opportunities.
-
----
-
-### [Hubstaff Talent](https://talent.hubstaff.com/)
-**Category:** Remote and Freelance  
-Free resource for companies to find remote freelancers and contractors.
-
----
-
-### [JobBoardSearch](https://jobboardsearch.com/)
-**Category:** Meta Search / Aggregator  
-Search engine that indexes hundreds of niche and general job boards.
-
----
-
-### [Jobspresso](https://jobspresso.co/)
-**Category:** Remote and Flexible Work  
-Expertly curated remote jobs in tech, marketing, and customer support.
-
----
-
-### [JS Remotely (JavaScript Jobs)](https://jsremotely.com/)
-**Category:** Niche and Specialized Boards  
-Dedicated to remote JavaScript and front-end developer positions.
-
----
-
-### [Monster](https://www.monster.com/)
-**Category:** Popular  
-One of the oldest job boards, covering a broad range of industries and experience levels.
-
----
-
-### [NoDesk](https://nodesk.co/remote-jobs/)
-**Category:** Remote and Flexible Work  
-Highlights remote jobs and company cultures built around flexible work.
-
----
-
-### [Outreach AI](https://outreach.ai/jobs)
-**Category:** Niche and Specialized Boards  
-AI-focused opportunities and startup roles in emerging technologies.
-
----
-
-### [Pangian](https://pangian.com/)
-**Category:** Remote and Flexible Work  
-Global community for remote professionals and companies.
-
----
-
-### [RemoteCircles](https://remotecircles.com/)
-**Category:** Remote and Flexible Work  
-Curated listings and networking for remote teams and job seekers.
-
----
-
-### [Remote Habits](https://remotehabits.com/jobs/)
-**Category:** Remote and Flexible Work  
-Profiles remote workers and shares remote job opportunities.
-
----
-
-### [Remote Hub](https://remotehub.com/)
-**Category:** Remote and Flexible Work  
-Freelancing and full-time remote job listings across industries.
-
----
-
-### [RemoteRocketship](https://remoterocketship.com/)
-**Category:** Remote and Flexible Work  
-Curates remote jobs at vetted, fast-growing startups.
-
----
-
-### [Remote Women](https://remotewomen.com/)
-**Category:** Remote and Flexible Work  
-Promotes gender diversity in remote workplaces.
-
----
-
-### [Remote.co](https://remote.co/)
-**Category:** Remote and Flexible Work  
-Comprehensive resource for companies and individuals embracing remote work.
-
----
-
-### [Remote4Me](https://remote4me.com/)
-**Category:** Remote and Flexible Work  
-Specializes in technical and customer support remote positions.
-
----
-
-### [Remotive](https://remotive.com/)
-**Category:** Remote and Flexible Work  
-Remote job community with a newsletter and global postings.
-
----
-
-### [SimplyHired](https://www.simplyhired.com/)
-**Category:** Popular  
-Job aggregator that collects listings from multiple job boards and websites.
-
----
-
-### [Skip The Drive](https://www.skipthedrive.com/)
-**Category:** Remote and Flexible Work  
-Focuses on remote and telecommuting jobs across multiple fields.
-
----
-
-### [Stack Overflow Jobs](https://stackoverflow.com/jobs)
-**Category:** Tech and IT  
-High-quality tech roles, primarily software engineering and development.
-
----
-
-### [TechCareers](https://www.techcareers.com/)
-**Category:** Tech and IT  
-Dedicated technology job board for IT professionals.
-
----
-
-### [The Muse](https://www.themuse.com/jobs)
-**Category:** Popular  
-Provides job listings with company insights, reviews, and culture info.
-
----
-
-### [Toptal](https://www.toptal.com/)
-**Category:** Freelance and Elite Talent  
-Exclusive network for top freelance developers, designers, and finance experts.
-
----
-
-### [TryRemotely](https://tryremotely.com/)
-**Category:** Remote and Flexible Work  
-Curated site for remote-friendly job openings.
-
----
-
-### [Upwork](https://www.upwork.com/)
-**Category:** Freelance and Gig  
-Major global freelancing platform for a variety of short- and long-term projects.
-
----
-
-### [Venture Loop](https://www.ventureloop.com/)
-**Category:** Startup and Tech  
-Jobs from venture-backed companies and startups.
-
----
-
-### [Virtual Vocations](https://www.virtualvocations.com/)
-**Category:** Remote and Flexible Work  
-Subscription-based board specializing in telecommuting and remote work.
-
----
-
-### [Working Nomads](https://www.workingnomads.com/)
-**Category:** Remote and Flexible Work  
-Aggregates remote job listings for digital professionals worldwide.
-
----
-
-### [Y Combinator](https://www.ycombinator.com/jobs)
-**Category:** Startup and Tech  
-Startup accelerator featuring open roles across its portfolio companies.
-
----
-
-### [Jobright](https://jobright.ai)
-**Category:** AI-Powered Job Search  
-Automated job aggregator that scrapes and filters listings by remote and tech roles.
-
----
-
-### [Just Remote](https://justremote.co/)
-**Category:** Remote and Flexible Work  
-Remote job listings with salary filters and team-type indicators.
-
----
-
-### [Arc.dev](https://arc.dev/)
-**Category:** Startup and Tech  
-Developer-focused job board connecting engineers with remote and startup positions.
-
----
-
-### [DailyRemote](https://dailyremote.com/)
-**Category:** Remote and Flexible Work  
-Daily curated feed of remote job listings across industries.
-
----
-
-### [Remote100K](https://remote100k.com/)
-**Category:** Niche and Specialized Boards  
-Remote tech jobs with six-figure salary potential.
-
----
-
-### [Contra](https://contra.com/)
-**Category:** Freelance and Independent  
-Commission-free platform for freelancers and independents.
-
----
-
-### [SEOJobs](https://seojobs.com/)
-**Category:** Niche and Specialized Boards  
-Focused on SEO, content marketing, and growth roles.
-
----
-
-### [Space Crew](https://spacecrew.com/)
-**Category:** Niche and Specialized Boards  
-Community and jobs for space, aerospace, and related industries.
-
----
-
-### [80,000 Hours](https://80000hours.org/jobs/)git 
-**Category:** Niche and Specialized Boards  
-Mission-driven job board focused on high-impact careers.
-
----
-
-### [GreenJobSearch.org](https://www.greenjobsearch.org/)
-**Category:** Niche and Specialized Boards  
-Environmentally focused career board for sustainability and green jobs.
-
----
-
-### [ClearanceJobs](https://www.clearancejobs.com/)
-**Category:** Niche and Specialized Boards  
-Security clearance-required positions for defense and government contracting.
+- [Monster](https://www.monster.com/) — Broad listings across many industries.
