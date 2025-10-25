@@ -9,6 +9,10 @@ readTime: "4 min read"
 
 # Top 10 Job Boards for Tech and Remote Work
 
+> **TL;DR?** [Skip to the full list](#others-worth-mentioning) at the bottom for a quick overview!
+
+---
+
 ### [1. LinkedIn](https://www.linkedin.com)
 **Category:** Popular / Networking  
 It's LinkedIn, what else is there to say? It has a little bit of everything. Mostly free, with some premium features.  
