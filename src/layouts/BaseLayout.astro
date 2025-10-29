@@ -9,11 +9,47 @@ const {
 ---
 <html lang="en">
   <head>
-    <meta charset="UTF-8" />
+
+    <script id="Cookiebot" src="https://consent.cookiebot.com/uc.js" data-cbid="4995c6e9-7369-46ca-b012-62f93d0a9074" type="text/javascript" async></script>
+
+    <script data-cookieconsent="ignore">
+      window.dataLayer = window.dataLayer || [];
+      function gtag() {
+        dataLayer.push(arguments);
+      }
+      gtag("consent", "default", {
+        ad_personalization: "denied",
+        ad_storage: "denied",
+        ad_user_data: "denied",
+        analytics_storage: "denied",
+        functionality_storage: "denied",
+        personalization_storage: "denied",
+        security_storage: "granted",
+        wait_for_update: 500,
+        });
+        gtag("set", "ads_data_redaction", true);
+        gtag("set", "url_passthrough", false);
+      </script>
+    
+    
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-5JQYBCLEW5"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+
+      gtag('config', 'G-5JQYBCLEW5');
+    </script>
+
+
+        <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>{title}</title>
     <meta name="description" content={description} />
     
+
+
     <!-- Open Graph for LinkedIn sharing -->
     <meta property="og:type" content={type} />
     <meta property="og:url" content={url} />
@@ -23,6 +59,7 @@ const {
     
     <!-- Favicon -->
     <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    
     <style>
       html, body {
         margin: 0;
