@@ -9,6 +9,10 @@ const {
 ---
 <html lang="en">
   <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>{title}</title>
+    <meta name="description" content={description} />
 
     <script id="Cookiebot" src="https://consent.cookiebot.com/uc.js" data-cbid="4995c6e9-7369-46ca-b012-62f93d0a9074" type="text/javascript" async></script>
 
@@ -31,22 +35,14 @@ const {
         gtag("set", "url_passthrough", false);
       </script>
     
-    
     <!-- Google tag (gtag.js) -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-5JQYBCLEW5"></script>
     <script>
       window.dataLayer = window.dataLayer || [];
       function gtag(){dataLayer.push(arguments);}
       gtag('js', new Date());
-
       gtag('config', 'G-5JQYBCLEW5');
     </script>
-
-
-        <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>{title}</title>
-    <meta name="description" content={description} />
     
 
 
@@ -307,7 +303,8 @@ const {
             <a href="/">Home</a>
             <a href="/posts">Posts</a>
             <a href="/tutorials">Tutorials</a>
-            <a href="/learning-path">DevOps Learning Path</a>
+            <a href="/ai-learning-path">AI Learning Path</a>
+            <a href="/devops-learning-path">DevOps Learning Path</a>
             <a href="/aboutme">About Me</a>
           </div>
           <div class="hamburger" onclick="toggleMobileNav()">
@@ -320,7 +317,8 @@ const {
           <a href="/">Home</a>
           <a href="/posts">Posts</a>
           <a href="/tutorials">Tutorials</a>
-          <a href="/learning-path">DevOps Learning Path</a>
+          <a href="/ai-learning-path">AI Learning Path</a>
+          <a href="/devops-learning-path">DevOps Learning Path</a>
           <a href="/aboutme">About Me</a>
         </div>
       </header>

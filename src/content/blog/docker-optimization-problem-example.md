@@ -278,3 +278,4 @@ Now that you understand the problem and have seen real examples, you're ready to
 **Continue reading:** [Docker Image Optimization: 7 Essential Techniques](/blog/docker-optimization-techniques)
 
 Or jump to advanced techniques: [Docker Image Optimization: Advanced Techniques & Tools](/blog/docker-optimization-advanced)
+

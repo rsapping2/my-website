@@ -2,9 +2,9 @@
 import BaseLayout from '../layouts/BaseLayout.astro';
 import { getEntry } from 'astro:content';
 
-const entry = await getEntry('learning', 'learning-path'); 
+const entry = await getEntry('learning', 'devops-learning-path'); 
 if (!entry) {
-  throw new Error(`Post not found for slug: learning-path`);
+  throw new Error(`Post not found for slug: devops-learning-path`);
 }
 
 const { Content } = await entry.render(); 
@@ -38,3 +38,4 @@ const formattedDate = new Date(pubDate).toLocaleDateString('en-US', { timeZone: 
     <Content />
   </article>
 </BaseLayout>
+

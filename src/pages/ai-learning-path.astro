@@ -1,0 +1,41 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+import { getEntry } from 'astro:content';
+
+const entry = await getEntry('learning', 'ai-learning-path'); 
+if (!entry) {
+  throw new Error(`Post not found for slug: ai-learning-path`);
+}
+
+const { Content } = await entry.render(); 
+const { title, pubDate, description, tags, image } = entry.data;
+const formattedDate = new Date(pubDate).toLocaleDateString('en-US', { timeZone: 'America/Los_Angeles' });
+---
+
+<BaseLayout>
+  <article class="prose mx-auto px-4 py-6">
+    <h1>{title}</h1>
+
+    <p>{description}</p>
+
+    {tags && tags.length > 0 && (
+      <div class="mt-4">
+        {tags && tags.length > 0 && (
+          <div class="mt-4">
+            <p><strong>Tags:</strong> {tags.join(', ')}</p>
+          </div>
+        )}
+      </div>
+    )}
+    
+    {image && <img src={image} alt={title} class="my-4 rounded shadow-md" />}
+    
+    <p class="text-gray-500 text-sm">
+      <span>Last updated on: </span>{formattedDate}
+    </p>
+
+    <hr class="my-6" />
+    <Content />
+  </article>
+</BaseLayout>
+
