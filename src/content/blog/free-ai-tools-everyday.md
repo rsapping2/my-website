@@ -1,13 +1,13 @@
 ---
-title: "Free AI Tools Everyone Should Know About"
+title: "AI Tools (And How to Actually Use Them)"
 pubDate: "2025-12-15"
-description: "A beginner friendly guide to understanding AI chatbots and the best free tools available. Learn what LLMs are and how to use them in your daily life."
+description: "A beginner friendly guide to understanding AI chatbots and the recommended free tools available. Learn what LLMs are and how to use them in your daily life."
 tags: ["ai", "llm", "tools", "productivity", "beginner", "chatgpt", "gemini", "claude"]
 image: "/images/default.png"
 readTime: "8 min read"
 ---
 
-# Free AI Tools Everyone Should Know About
+# Free AI Tools (And How to Actually Use Them)
 
 You've probably heard people talking about ChatGPT, AI assistants, vibe coding or prompt AI tools. Maybe you've seen coworkers or friends using them to write emails, brainstorm ideas, or answer questions. But what exactly are these tools, and how can you start using them for free?
 
