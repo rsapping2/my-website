@@ -5,3 +5,5 @@ dist/*
 node_modules/.vite/deps/_metadata.json
 node_modules/.vite/deps/_metadata.json
 node_modules
+suggested_content/
+.github/chatmodes/

@@ -279,3 +279,5 @@ Now that you understand the problem and have seen real examples, you're ready to
 
 Or jump to advanced techniques: [Docker Image Optimization: Advanced Techniques & Tools](/blog/docker-optimization-advanced)
 
+
+

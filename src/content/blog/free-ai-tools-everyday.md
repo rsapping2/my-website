@@ -7,7 +7,7 @@ image: "/images/default.png"
 readTime: "8 min read"
 ---
 
-# Free AI Tools (And How to Actually Use Them)
+# AI Tools
 
 You've probably heard people talking about ChatGPT, AI assistants, vibe coding or prompt AI tools. Maybe you've seen coworkers or friends using them to write emails, brainstorm ideas, or answer questions. But what exactly are these tools, and how can you start using them for free?
 
