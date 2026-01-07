@@ -1,7 +1,7 @@
 ---
-title: "AI Tools (And How to Actually Use Them)"
+title: "Free AI Tools Worth Trying (A Beginner's Guide)"
 pubDate: "2025-12-15"
-description: "A beginner friendly guide to understanding chatbots and the recommended free tools available. Learn what LLMs are and how to use them in your daily life."
+description: "A beginner friendly guide to understanding AI chatbots and the recommended free tools available. Learn what LLMs are and how to use them in your daily life."
 tags: ["ai", "llm", "tools", "productivity", "beginner", "chatgpt", "gemini", "claude"]
 image: "/images/default.png"
 readTime: "8 min read"
