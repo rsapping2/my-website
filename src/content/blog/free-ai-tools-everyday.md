@@ -1,7 +1,7 @@
 ---
 title: "AI Tools (And How to Actually Use Them)"
 pubDate: "2025-12-15"
-description: "A beginner friendly guide to understanding AI chatbots and the recommended free tools available. Learn what LLMs are and how to use them in your daily life."
+description: "A beginner friendly guide to understanding chatbots and the recommended free tools available. Learn what LLMs are and how to use them in your daily life."
 tags: ["ai", "llm", "tools", "productivity", "beginner", "chatgpt", "gemini", "claude"]
 image: "/images/default.png"
 readTime: "8 min read"
@@ -29,7 +29,7 @@ It's like having a conversation with someone who has read millions of books and 
 
 The list is honestly pretty long, but here's what I've found most useful:
 
-- **Writing help**: Emails, social media posts, cover letters, blog posts
+- **Writing help**: Emails, social media posts, cover letters, blog posts, resume review
 - **Research**: Quick explanations of complex topics, summaries of articles
 - **Brainstorming**: Ideas for projects, names, solutions to problems
 - **Learning**: Understanding new concepts, getting step-by-step explanations
@@ -54,7 +54,7 @@ I use this one the most because it's reliable and handles general purpose tasks 
 
 ### 2. Google Gemini (formerly Bard)
 
-Google's answer to ChatGPT. It used to be called Bard, but they rebranded it to Gemini (probably because "Bard" wasn't catching on). 
+Google's answer to ChatGPT. It used to be called Bard, but they rebranded it to Gemini.
 
 The free tier gives you access to Gemini Pro, which integrates nicely with Google services. You can generate images in some regions, and there's voice input support if you're into that.
 
@@ -82,11 +82,9 @@ I'll be honest, I don't use this one as much, but if you're already in the Micro
 
 ### 5. Grok
 
-This is Elon Musk's AI assistant, which means it comes with... well, all the baggage the Elon experience. This is the AI you have likely heard about in the news...for saying edgy things. It's known for being more conversational and less filtered than the others, and it can access real time information from X (Twitter).
+This is Elon Musk's AI assistant, which means it comes with... well, with the Elon experience. This is the AI you have likely heard about in the news...for saying edgy things. It's known for being more conversational and less filtered than the others, and it can access real time information from X (Twitter).
 
-The catch? Full access requires an X Premium subscription. You can check it out at [x.ai](https://x.ai) or through X itself.
-
-I've tried it, and it's fine. However If you're already on X Premium, might as well give it a shot. 
+You can check it out at [x.ai](https://x.ai) or through X itself. I've tried it, and it's alright.
 
 ## How to Actually Use These Things
 
@@ -94,30 +92,31 @@ Okay, so you've picked a tool (or you're still deciding). Here's how to actually
 
 ### Start Simple
 
-Don't try to do everything at once. Pick one tool—I'd recommend ChatGPT or Gemini to start—and just mess around with it. Ask it stupid questions. See what happens.
+Don't try to do everything at once. Pick one tool. I'd recommend ChatGPT or Gemini to start with and just mess around with it. Ask it stupid questions. See what happens. 
 
-Signing up takes like 60 seconds. Enter your email, check your inbox, verify it, and you're done. It's not rocket science.
+Signing up takes like 60 seconds. Enter your email, check your inbox, verify it, and you're done. It's not rocket science. Note: You can likely use the prompts without signing up, and to play around, thata is just fine.
 
 ### Your First Prompts Should Be Boring
 
 Seriously. Don't try to write your magnum opus on day one. Start with something simple:
 
 - "What's a good recipe for chicken dinner for 4 people?"
-- "Help me write a text message to cancel plans with a friend"
+- "How long do you boil an egg in the microwave?"
+- "Help me write a text message to cancel lunch plans with a friend."
 - "What should I say in a thank you note for a birthday gift?"
 
 These aren't exciting, but they'll help you get a feel for how the tool works. Once you're comfortable, you can get more creative.
 
 ### The Secret: Be Specific
 
-Here's where most people mess up. They ask vague questions and get vague answers. The AI isn't a mind reader.
+Here's where most people mess up. They ask vague questions and get vague answers. The AI isn't a mind reader. It needs context.
 
 Bad: "Write an email asking about time off"  
-Good: "Write a professional email to my manager requesting time off next Friday, keeping it brief and friendly"
+Good: "Write a professional email to my manager requesting time off next Friday, keeping it brief and friendly."
 
-See the difference? The more context you give, the better the response. It's like talking to a person—if you want good advice, you need to explain the situation.
+See the difference? The more context you give, the better the response. It's like talking to a person, if you want good advice, you need to explain the situation.
 
-Same thing with planning: "Help me plan a trip to Paris" will get you generic tourist stuff. But "Help me plan a 3 day trip to Paris in March for two people, including budget friendly restaurant recommendations" will actually be useful.
+Same thing with planning: "Help me plan a trip to the Beaach" will get you generic tourist stuff. But "Help me plan a 3 day trip to the Beach in March for two people, including budget friendly restaurant recommendations" will actually be useful.
 
 ### Don't Be Afraid to Ask for Changes
 
@@ -129,23 +128,23 @@ Try different stuff. Ask it to explain concepts you don't understand. Use it to 
 
 ## A Few Things to Keep in Mind
 
-**Talk to it like a person.** Well, sort of. You can ask follow up questions and have a back and forth. It's not like using a search engine where you type and get results it's more like texting a friend who happens to know a lot.
+**Talk to it like a person.** Well, sort of. You can ask follow up questions and have a back and forth. It's not like using a search engine where you type and get results, it's more like texting a friend who happens to know a lot.
 
-**Don't trust everything it says.** AI can make mistakes. It can "hallucinate" (make up information that sounds plausible). I've caught it giving me wrong code examples, incorrect dates, and made-up facts. Always verify important stuff, especially for coding, medical, legal, or financial advice. It's a tool, not a replacement for critical thinking.
+**Don't trust everything it says.** AI can make mistakes or just make stuff up. It "hallucinates" (make up information that sounds plausible, and sites made up sources as well). I've caught it giving me wrong code examples, incorrect dates, and made up facts. In some video I've seen, people have showning it has made up laws, and cases to support it. Always verify important stuff, especially for coding, medical, legal, or financial advice. It's a tool, not a replacement for critical thinking.
 
-**It's a starting point, not the finish line.** AI is great for drafts and ideas, but you should always review, edit, and personalize what it gives you. I've never used an AI generated email without tweaking it first. It's a collaborator, not a replacement.
+**It's a starting point, not the finish line.** AI is great for drafts and ideas, but you should always review, edit, and personalize what it gives you. I've always had to update outputs from the AI. It's a collaborator, not a replacement.
 
-**Different tools for different jobs.** I use ChatGPT for general stuff, Claude for analyzing long documents, and Gemini when I need research. Experiment and see what works for you.
+**Different tools for different jobs.** I use ChatGPT for general stuff, Claude for analyzing and writting code, and Gemini when I need research or a second opinion. Experiment and see what works for you.
 
-**Watch what you share.** Don't paste passwords, sensitive personal info, or confidential work stuff into these tools. They use your conversations to train their models (usually), so keep that in mind.
+**Watch what you share.** Don't paste passwords, sensitive personal info, or work related material into these tools. They use your conversations to train their models (unless you have a paid plan and opt out), so keep that in mind.
 
-## Questions People Actually Ask
+## Questions People Often Ask
 
 **Do I need to pay?**  
-Nope. All of these have free tiers that are genuinely useful. The paid versions are nice if you need advanced features, but the free ones are fine for most people.
+No. All of these have free tiers that are genuinely useful. The paid versions are nice if you need advanced features, but the free ones are fine for most people.
 
 **Which one should I use?**  
-Depends on what you need. ChatGPT is the most versatile and popular. Gemini is great if you're already in Google's ecosystem. Claude is my go to for analyzing long documents. Microsoft Copilot gives you GPT-4 for free, which is cool. Grok... well, I already told you about Grok. Try a couple and see what clicks.
+Depends on what you need. ChatGPT is the most versatile and popular. Gemini is great if you're already in Google's ecosystem. Claude is my go to for analyzing coding. Microsoft Copilot gives you GPT-4 for free, which is cool. Try a couple and see what clicks.
 
 **Is my data private?**  
 Most services use your conversations to train their models. Check the privacy policies if you're concerned. For sensitive stuff, either use paid tiers (which often have better privacy guarantees) or just don't share it. Common sense applies here.
@@ -154,17 +153,17 @@ Most services use your conversations to train their models. Check the privacy po
 Lots of people do, but check your company's policies first. Some places have restrictions, especially around confidential information. Don't get yourself in trouble.
 
 **Will AI replace my job?**  
-This is the question everyone's asking, and the honest answer is: it's complicated. Jobs are shifting, not just disappearing. In tech, AI can handle a lot of routine coding that entry level developers used to do. But that means the industry needs more people who can design systems, make architectural decisions, and solve complex problems—the stuff AI can't do yet.
+This is the question everyone's asking, and the honest answer is: it's complicated. Jobs are shifting, not just disappearing. In tech, AI can handle a lot of routine coding that entry level developers used to do. But that means the industry needs more people who can design systems, make architectural decisions, and solve complex problems the stuff AI can't do yet.
 
-The same thing is happening everywhere: routine tasks are getting automated, but roles that need human judgment, creativity, and expertise are becoming more valuable. The key is adapting and developing skills that work with AI, not against it. It's not about being replaced—it's about evolving.
+The same thing is happening everywhere, routine tasks are getting automated, but roles that need human judgment, creativity, and expertise are still valuable. The key is adapting and developing skills that work with AI, not against it. It's not about being replaced, but it's about leveraging its use.
 
 ## Just Start Already
 
 Look, the best way to learn this stuff is to just do it. Stop reading about it and go try it.
 
-Pick one tool (ChatGPT or Gemini are good starting points), sign up (takes like 2 minutes), and ask it three questions about something you're actually curious about. Then try one practical thing—write an email, brainstorm some ideas, whatever.
+Pick one tool (ChatGPT or Gemini are good starting points), sign up (takes like 2 minutes), and ask it three questions about something you're actually curious about. Then try one practical thing, ask for a recipe, brainstorm some ideas, whatever.
 
-Once you're comfortable, check out the other tools. You don't need any technical knowledge. Just type what you're thinking and see what happens. Worst case scenario, you waste 10 minutes. Best case, you find a tool that makes your life easier.
+Once you're comfortable, check out the other tools. You don't need any technical knowledge. Just type what you're thinking and see what happens. Worst case scenario, you waste 10-15 minutes. Best case, you find a tool that makes your life easier.
 
 ## If You Want to Go Deeper
 
